@@ -1,0 +1,63 @@
+#include "stm32f0xx_ll_system.h"
+#include "stm32f0xx_ll_bus.h"
+#include "stm32f0xx_ll_gpio.h"
+#include "stm32f0xx_ll_utils.h"
+#include "stm32f0xx_ll_cortex.h"
+
+// Definitions for LED2 pin and port
+#define LD2_Pin LL_GPIO_PIN_5
+#define LD2_GPIO_Port GPIOA
+
+void SystemClock_Config(void);
+void GPIO_Init(void);
+
+int main(void)
+{
+    // Configure system clock and GPIO for LED2
+    SystemClock_Config();
+    GPIO_Init();
+
+    while (1)
+    {
+        // Set LED2 pin
+        LL_GPIO_SetOutputPin(LD2_GPIO_Port, LD2_Pin);
+        LL_mDelay(200);
+
+        // Reset LED2 pin
+        LL_GPIO_ResetOutputPin(LD2_GPIO_Port, LD2_Pin);
+        LL_mDelay(200);
+    }
+
+    return 0;
+}
+
+void SystemClock_Config(void)
+{
+    /* This function is often provided by the STM32Cube HAL, and it's used to set up
+       the system clock source, PLL, prescalers, and clock output settings. 
+       The specifics would depend on your system configuration and requirements. */
+
+    // NOTE: You'll need to set this up to match your specific requirements.
+}
+
+void GPIO_Init(void)
+{
+    // Enable GPIOA clock
+    LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOA);
+
+    // Configure the LED2 pin as an output
+    LL_GPIO_SetPinMode(LD2_GPIO_Port, LD2_Pin, LL_GPIO_MODE_OUTPUT);
+    LL_GPIO_SetPinSpeed(LD2_GPIO_Port, LD2_Pin, LL_GPIO_SPEED_FREQ_LOW);
+    LL_GPIO_SetPinPull(LD2_GPIO_Port, LD2_Pin, LL_GPIO_PULL_NO);
+}
+
+
+A few notes:
+
+The code initializes the LED2 pin (assuming it's on GPIOA, pin 5) as an output.
+The SystemClock_Config function is a placeholder. You'll need to configure this function according to your specific clock settings. Typically, STM32CubeMX will generate this function for you.
+This program uses the Low-Level (LL) library, which provides a straightforward approach to peripheral initialization and control. Ensure you have the appropriate STM32Cube HAL and LL library for your chip to make this program compile and run correctly.
+Remember to include the correct header files and link against the necessary source files when compiling.
+
+
+
