@@ -1,0 +1,111 @@
+Alright, let's tackle this step-by-step.
+
+First, the Morse code for "SOS" is "..." (S) followed by "---" (O) and again "..." (S). The convention for Morse code is to have a short gap (equivalent to a dot duration) between each symbol and a longer gap (equivalent to 3 dots) between letters. So, the "SOS" in Morse code with gaps can be represented as:
+
+Where each "1" or "0" is a unit time, for example, 200ms. We'll have:
+
+3 unit times for a dot
+7 unit times for a dash (3 for the dash itself and 4 for the following gap, but we subtract 1 because there's already 1 gap unit accounted for after a dot)
+Using an Array
+
+Let's start with the first approach where you wanted the sequence to be stored in a uint8_t array[32].
+
+#include "stm32f0xx_ll_system.h"
+#include "stm32f0xx_ll_bus.h"
+#include "stm32f0xx_ll_gpio.h"
+
+#define LD2_Pin LL_GPIO_PIN_5
+#define LD2_GPIO_Port GPIOA
+
+void SystemClock_Config(void);
+void GPIO_Init(void);
+
+uint8_t morse_sequence[32] = {
+    1,1,1,0,1,1,1,0,1,1,1,0,
+    1,1,1,0,0,0,1,1,1,0,0,0,1,1,1,
+    0,1,1,1,0,1,1,1
+};
+
+int main(void) 
+{
+    SystemClock_Config();
+    GPIO_Init();
+    
+    while(1) 
+    {
+        for(uint8_t i = 0; i < 32; i++) 
+        {
+            if(morse_sequence[i] == 0) 
+            {
+                LL_GPIO_ResetOutputPin(LD2_GPIO_Port, LD2_Pin);
+            } 
+            else 
+            {
+                LL_GPIO_SetOutputPin(LD2_GPIO_Port, LD2_Pin);
+            }
+            LL_mDelay(200);
+        }
+    }
+    
+    return 0;
+}
+
+// SystemClock_Config and GPIO_Init functions go here...
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Using uint32_t with Bitwise Operations
+
+The sequence in a single uint32_t would look like:
+
+uint32_t morse_sequence = 0b11101110111000111000111011101110;
+
+To extract each bit and represent it for the LED:
+
+#include "stm32f0xx_ll_system.h"
+#include "stm32f0xx_ll_bus.h"
+#include "stm32f0xx_ll_gpio.h"
+
+#define LD2_Pin LL_GPIO_PIN_5
+#define LD2_GPIO_Port GPIOA
+
+void SystemClock_Config(void);
+void GPIO_Init(void);
+
+uint32_t morse_sequence = 0b11101110111000111000111011101110;
+
+int main(void) 
+{
+    SystemClock_Config();
+    GPIO_Init();
+    
+    while(1) 
+    {
+        for(int8_t i = 31; i >= 0; i--) 
+        {
+            if((morse_sequence & (1 << i)) == 0) 
+            {
+                LL_GPIO_ResetOutputPin(LD2_GPIO_Port, LD2_Pin);
+            } 
+            else 
+            {
+                LL_GPIO_SetOutputPin(LD2_GPIO_Port, LD2_Pin);
+            }
+            LL_mDelay(200);
+        }
+    }
+    
+    return 0;
+}
+
+// SystemClock_Config and GPIO_Init functions go here...
+
+In the above program, I looped from the most significant bit (31st bit) to the least significant bit (0th bit) and used a bitwise AND operation to check the value of each bit.
+
+Don't forget to provide implementations for the SystemClock_Config and GPIO_Init functions, as they are necessary for configuring the MCU's clock and initializing the GPIO respectively.
+
+
+
