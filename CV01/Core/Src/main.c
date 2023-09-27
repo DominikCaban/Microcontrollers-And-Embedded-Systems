@@ -65,15 +65,22 @@ static void MX_USART2_UART_Init(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
- // LED Morse Blink
-	uint8_t morse_sequence[32] = {
-	    1,0,1,0,1,0,
-		0,0,
-		1,1,1,0,1,1,1,0,1,1,1,
-		0,0,
-		1,0,1,0,1,0,
-		0,0,0,0,0
-	};
+
+	// LED Morse Blink
+	// OLD Revision
+//	uint8_t morse_sequence[32] = {
+//	    1,0,1,0,1,0,
+//		0,0,
+//		1,1,1,0,1,1,1,0,1,1,1,
+//		0,0,
+//		1,0,1,0,1,0,
+//		0,0,0,0,0
+//	};
+
+
+	// New Revision
+	uint32_t morse_code = 0b1010100011101110111001010100000;
+
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -109,16 +116,31 @@ int main(void)
 //      LL_GPIO_ResetOutputPin(LD2_GPIO_Port, LD2_Pin);
 //      LL_mDelay(200);
 
-	  for (uint8_t i=0; i<=31; i++)
+//	  OLD Revision
+//	  for (uint8_t i=0; i<=31; i++)
+//	  {
+//		  uint8_t value = morse_sequence [i];
+//		  if (value==1) {
+//			  LL_GPIO_SetOutputPin(LD2_GPIO_Port, LD2_Pin);
+//		  } else {
+//			  LL_GPIO_ResetOutputPin(LD2_GPIO_Port, LD2_Pin);
+//		  }
+//		  LL_mDelay(200);
+//	  }
+
+	  for (uint8_t i=31; i>=0 && i<=31; i--)
 	  {
-		  uint8_t value = morse_sequence [i];
-		  if (value==1) {
+		  uint32_t mask = (1<<i);
+		  uint32_t value = mask & morse_code;
+		  if (value!=0) {
 			  LL_GPIO_SetOutputPin(LD2_GPIO_Port, LD2_Pin);
 		  } else {
 			  LL_GPIO_ResetOutputPin(LD2_GPIO_Port, LD2_Pin);
 		  }
 		  LL_mDelay(200);
 	  }
+
+
       /* USER CODE END WHILE */
       /* USER CODE BEGIN 3 */
   }
