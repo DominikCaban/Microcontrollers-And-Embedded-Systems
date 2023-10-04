@@ -29,8 +29,6 @@
 #define LED_TIME_BLINK 300
 #define LED_TIME_SHORT 100
 #define LED_TIME_LONG 1000
-#define TIME_SAMPLING 5
-
 
 /* USER CODE END PTD */
 
@@ -79,9 +77,8 @@ void blikac(void) {
 void tlacitka(void) {
 
 	static uint32_t delay_temp;
-	if (Tick > delay_temp + TIME_SAMPLING) {
+	if (Tick > delay_temp + 5) {
 		delay_temp = Tick;
-
 		static uint16_t debounce_s1 = 0xFFFF;
 		uint32_t s1 = LL_GPIO_IsInputPinSet(S1_GPIO_Port, S1_Pin);
 		debounce_s1 <<= 1;

@@ -29,8 +29,6 @@
 #define LED_TIME_BLINK 300
 #define LED_TIME_SHORT 100
 #define LED_TIME_LONG 1000
-#define TIME_SAMPLING 5
-
 
 /* USER CODE END PTD */
 
@@ -64,48 +62,35 @@ volatile uint32_t Tick;
 static uint32_t off_time;
 
 
-void blikac(void) {
-	static uint32_t delay;
+void blikac(void)
+ {
+ static uint32_t delay;
 
-	if (Tick > delay + LED_TIME_BLINK) {
-		LL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
-		delay = Tick;
-	}
+ if (Tick > delay + LED_TIME_BLINK) {
+	  LL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
+	  delay = Tick;
+ 	 }
+ }
+
+void tlacitka(void)
+ {
+	 static uint32_t old_s2;
+	 uint32_t new_s2 = LL_GPIO_IsInputPinSet(S2_GPIO_Port, S2_Pin);
+	 if (old_s2 && !new_s2) { // falling edge
+	 off_time = Tick + LED_TIME_SHORT;
+	 LL_GPIO_SetOutputPin(LED2_GPIO_Port, LED2_Pin);
+	 }
+	 old_s2 = new_s2;
+
+	 static uint32_t old_s1;
+	 uint32_t new_s1 = LL_GPIO_IsInputPinSet(S1_GPIO_Port, S1_Pin);
+	 if (old_s1 && !new_s1) { // falling edge
+	 off_time = Tick + LED_TIME_LONG;
+	 LL_GPIO_SetOutputPin(LED2_GPIO_Port, LED2_Pin);
+	 }
+	 old_s1 = new_s1;
+
 }
-
-
-
-
-void tlacitka(void) {
-
-	static uint32_t delay_temp;
-	if (Tick > delay_temp + TIME_SAMPLING) {
-		delay_temp = Tick;
-
-		static uint16_t debounce_s1 = 0xFFFF;
-		uint32_t s1 = LL_GPIO_IsInputPinSet(S1_GPIO_Port, S1_Pin);
-		debounce_s1 <<= 1;
-		if (s1) {
-			debounce_s1 |= 0x0001;
-			if (debounce_s1 == 0x7FFF) {
-				off_time = Tick + LED_TIME_LONG;
-				LL_GPIO_SetOutputPin(LED2_GPIO_Port, LED2_Pin);
-			}
-		}
-
-		static uint16_t debounce_s2 = 0xFFFF;
-		uint32_t s2 = LL_GPIO_IsInputPinSet(S2_GPIO_Port, S2_Pin);
-		debounce_s2 <<= 1;
-		if (s2) {
-			debounce_s2 |= 0x0001;
-			if (debounce_s2 == 0x7FFF) {
-				off_time = Tick + LED_TIME_SHORT;
-				LL_GPIO_SetOutputPin(LED2_GPIO_Port, LED2_Pin);
-			}
-		}
-	}
-}
-
 
 /* USER CODE END 0 */
 
@@ -145,12 +130,17 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-	while (1) {
-		blikac();
-		tlacitka();
-		if (Tick > off_time) {
-			LL_GPIO_ResetOutputPin(LED2_GPIO_Port, LED2_Pin);
-		}
+  while (1)
+  {
+	 blikac ();
+	 static uint32_t delay_temp;
+     if (Tick > delay_temp + 40 ) {
+	 tlacitka();
+     }
+
+	 if (Tick > off_time) {
+	 LL_GPIO_ResetOutputPin(LED2_GPIO_Port, LED2_Pin);
+		 }
 
 
     /* USER CODE END WHILE */
