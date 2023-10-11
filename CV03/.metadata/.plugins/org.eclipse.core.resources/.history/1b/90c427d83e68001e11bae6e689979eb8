@@ -1,0 +1,42 @@
+/*
+ * sct.c
+ *
+ *  Created on: Oct 11, 2023
+ *      Author: xcaban01
+ */
+#include "sct.h"
+
+//void sct_init(void){
+//}
+
+//void sct_led(uint32_t value){
+//}
+
+//void sct_value(uint16_t value){
+//}
+
+
+void sct_init(void) {
+    HAL_GPIO_WritePin(SCT_NOE_GPIO_Port, SCT_NOE_Pin, GPIO_PIN_SET); // Set NOE high (turn off output)
+    HAL_GPIO_WritePin(SCT_CLK_GPIO_Port, SCT_CLK_Pin, GPIO_PIN_RESET); // Initialize CLK pin to low
+    HAL_GPIO_WritePin(SCT_SDI_GPIO_Port, SCT_SDI_Pin, GPIO_PIN_RESET); // Initialize SDI pin to low
+   // HAL_GPIO_WritePin(SCT_CLK_GPIO_Port, SCT_CLK_Pin|SCT_SDI_Pin|SCT_CLK_Pin, GPIO_PIN_RESET); // Initialize other pins to low
+
+
+   // HAL_GPIO_WritePin(GPIOB, SCT_CLK_Pin|SCT_SDI_Pin|SCT_CLK_Pin, GPIO_PIN_RESET); // Initialize other pins to low
+
+
+}
+
+void sct_led(uint32_t value) {
+    HAL_GPIO_WritePin(SCT_NOE_GPIO_Port, SCT_NOE_Pin, GPIO_PIN_RESET); // Enable output
+
+    for(int i = 0; i < 32; i++) {
+        HAL_GPIO_WritePin(SCT_SDI_GPIO_Port, SCT_SDI_Pin, (value & (1 << i)) ? GPIO_PIN_SET : GPIO_PIN_RESET); // Write SDI
+        HAL_GPIO_WritePin(SCT_CLK_GPIO_Port, SCT_CLK_Pin, GPIO_PIN_SET); // Toggle CLK
+        HAL_GPIO_WritePin(SCT_CLK_GPIO_Port, SCT_CLK_Pin, GPIO_PIN_RESET);
+    }
+
+    HAL_GPIO_WritePin(SCT_NLA_GPIO_Port, SCT_NLA_Pin, GPIO_PIN_SET); // Latch data
+    HAL_GPIO_WritePin(SCT_NLA_GPIO_Port, SCT_NLA_Pin, GPIO_PIN_RESET);
+}

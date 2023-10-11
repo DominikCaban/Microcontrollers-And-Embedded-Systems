@@ -128,7 +128,7 @@ int main(void)
 //		  LL_mDelay(200);
 //	  }
 
-	  for (uint8_t i=31; i>=0 && i<=31; i--)
+	  for (int8_t i=31; i>=0; i--)
 	  {
 		  uint32_t mask = (1<<i);
 		  uint32_t value = mask & morse_code;
