@@ -1,21 +1,18 @@
-16:22:28 **** Incremental Build of configuration Debug for project CV03 ****
+16:57:10 **** Incremental Build of configuration Debug for project CV03 ****
 make -j4 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:107:9: warning: implicit declaration of function 'sct_value' [-Wimplicit-function-declaration]
-  107 |         sct_value(230);
-      |         ^~~~~~~~~
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
 arm-none-eabi-gcc -o "CV03.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV03\CV03\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV03.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: CV03.elf
  
 arm-none-eabi-size   CV03.elf 
 arm-none-eabi-objdump -h -S  CV03.elf  > "CV03.list"
    text	   data	    bss	    dec	    hex	filename
-   7540	     20	   1700	   9260	   242c	CV03.elf
+   9080	     20	   1772	  10872	   2a78	CV03.elf
 Finished building: default.size.stdout
  
 Finished building: CV03.list
  
 
-16:22:28 Build Finished. 0 errors, 1 warnings. (took 771ms)
+16:57:11 Build Finished. 0 errors, 0 warnings. (took 815ms)
 

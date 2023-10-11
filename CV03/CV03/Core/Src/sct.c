@@ -5,7 +5,6 @@
  *      Author: xcaban01
  */
 #include "sct.h"
-
 //void sct_init(void){
 //}
 
@@ -24,8 +23,10 @@ void sct_init(void) {
 void sct_led(uint32_t value) {
     HAL_GPIO_WritePin(SCT_NOE_GPIO_Port, SCT_NOE_Pin, GPIO_PIN_RESET); // Enable output
 
-    for(int i = 0; i < 32; i++) {
-        HAL_GPIO_WritePin(SCT_SDI_GPIO_Port, SCT_SDI_Pin, (value & (1 << i)) ? GPIO_PIN_SET : GPIO_PIN_RESET); // Write SDI
+    for(uint32_t i = 0; i < 32; i++) {
+        HAL_GPIO_WritePin(SCT_SDI_GPIO_Port, SCT_SDI_Pin, (value & 1)); // Write SDI
+        value >>=1 ;
+
         HAL_GPIO_WritePin(SCT_CLK_GPIO_Port, SCT_CLK_Pin, GPIO_PIN_SET); // Toggle CLK
         HAL_GPIO_WritePin(SCT_CLK_GPIO_Port, SCT_CLK_Pin, GPIO_PIN_RESET);
     }
@@ -83,13 +84,13 @@ void sct_value(uint16_t value){
 
 	uint32_t reg = 0;
 
-	//position of hundreds
+	//position of 100
 	reg |= reg_values[0][value / 100 % 10];
 
-	//position of tents
+	//position of 10
 	reg |= reg_values[1][value / 10 % 10];
 
-	//position of ones
+	//position of 1
 	reg |= reg_values[2][value / 1 % 10];
 
 	sct_led(reg);

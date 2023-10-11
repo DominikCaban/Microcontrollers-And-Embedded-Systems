@@ -4,16 +4,16 @@
  *  Created on: Oct 11, 2023
  *      Author: xcaban01
  */
-
+#include "main.h"
 #ifndef INC_SCT_H_
 #define INC_SCT_H_
 
-#include "main.h" // Include HAL drivers
-
 void sct_init(void);
+void sct_value(uint16_t value);
 void sct_led(uint32_t value);
 
 #endif /* INC_SCT_H_ */
+
 
 
 //void sct_init();
