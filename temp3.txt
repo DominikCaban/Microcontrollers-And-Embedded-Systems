@@ -1,0 +1,114 @@
+Let's break the problem into multiple steps:
+
+1. Setup CubeMX, GPIOs, and initializations.
+2. Implement the driver for the SCT2024.
+3. Implement the logic for the 7-segment display using the given table.
+4. Implement the rotary encoder logic to change the displayed value.
+
+Note: For the rotary encoder, there are different kinds of rotary encoders, and the exact implementation might differ. Here, we'll use a simple logic where two pins of the encoder indicate clockwise or counterclockwise rotation.
+
+**Step 1:** Setting up CubeMX (outside of this scope)
+
+Configure the pins PB5, PB4, PB3, and PB10 in GPIO output mode. Also, set two more pins (e.g., PA0 and PA1) for the rotary encoder.
+
+**Step 2:** Implement the driver for the SCT2024:
+
+`sct_driver.h`:
+```c
+#ifndef SCT_DRIVER_H_
+#define SCT_DRIVER_H_
+
+#include "main.h" // Include HAL drivers
+
+void sct_init(void);
+void sct_led(uint32_t value);
+
+#endif // SCT_DRIVER_H_
+```
+
+`sct_driver.c`:
+```c
+#include "sct_driver.h"
+
+void sct_init(void) {
+    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, GPIO_PIN_SET); // Set NOE high (turn off output)
+    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3|GPIO_PIN_4|GPIO_PIN_5, GPIO_PIN_RESET); // Initialize other pins to low
+}
+
+void sct_led(uint32_t value) {
+    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, GPIO_PIN_RESET); // Enable output
+    
+    for(int i = 0; i < 32; i++) {
+        HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, (value & (1 << i)) ? GPIO_PIN_SET : GPIO_PIN_RESET); // Write SDI
+        HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_SET); // Toggle CLK
+        HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_RESET);
+    }
+    
+    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_SET); // Latch data
+    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_RESET);
+}
+```
+
+**Step 3:** Implement the logic for the 7-segment display:
+
+`seven_seg.h`:
+```c
+#ifndef SEVEN_SEG_H_
+#define SEVEN_SEG_H_
+
+#include "main.h"
+#include "sct_driver.h"
+
+void sct_value(uint16_t value);
+
+#endif // SEVEN_SEG_H_
+```
+
+`seven_seg.c`:
+```c
+#include "seven_seg.h"
+
+static const uint32_t reg_values[3][10] = { ... }; // As provided
+
+void sct_value(uint16_t value) {
+    uint32_t reg = 0;
+    reg |= reg_values[0][value / 100 % 10];
+    reg |= reg_values[1][value / 10 % 10];
+    reg |= reg_values[2][value % 10];
+    sct_led(reg);
+}
+```
+
+**Step 4:** Implement the rotary encoder logic:
+
+In `main.c`:
+```c
+#define MAX_VALUE 150
+#define MIN_VALUE 0
+
+volatile uint16_t encoderValue = 0;
+
+void EXTI0_1_IRQHandler(void) { // Assuming PA0 is set for EXTI
+    if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_1) == GPIO_PIN_SET) {
+        if(encoderValue < MAX_VALUE) encoderValue++; // Clockwise
+    } else {
+        if(encoderValue > MIN_VALUE) encoderValue--; // Counter-Clockwise
+    }
+    sct_value(encoderValue);
+    HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_0);
+}
+
+int main(void) {
+    // Initialization code...
+
+    while(1) {
+        // Other code...
+    }
+}
+```
+
+Make sure to set up EXTI interrupt for the encoder pin (PA0 in this example) in CubeMX.
+
+Lastly, for everything to work, ensure you have correctly configured the GPIOs and enabled necessary clocks using STM32CubeMX. 
+
+This is a basic implementation, and in a real-world scenario, it might require debouncing logic for the rotary encoder or additional features. Adjust accordingly as per your needs!
