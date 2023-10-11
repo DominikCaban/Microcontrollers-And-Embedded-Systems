@@ -530,3 +530,130 @@ Finished building: default.size.stdout
  
 Finished building: CV03.list
  
+17:04:23 **** Incremental Build of configuration Debug for project CV03 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+In file included from ../Core/Src/sct.c:7:
+../Core/Inc/sct.h:12:16: error: unknown type name 'uint16_t'
+   12 | void sct_value(uint16_t value);
+      |                ^~~~~~~~
+../Core/Inc/sct.h:1:1: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  +++ |+#include <stdint.h>
+    1 | /*
+../Core/Inc/sct.h:13:14: error: unknown type name 'uint32_t'
+   13 | void sct_led(uint32_t value);
+      |              ^~~~~~~~
+../Core/Inc/sct.h:13:14: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Core/Src/sct.c: In function 'sct_init':
+../Core/Src/sct.c:10:5: warning: implicit declaration of function 'HAL_GPIO_WritePin' [-Wimplicit-function-declaration]
+   10 |     HAL_GPIO_WritePin(SCT_NOE_GPIO_Port, SCT_NOE_Pin, GPIO_PIN_SET); // Set NOE high (turn off output)
+      |     ^~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:10:23: error: 'SCT_NOE_GPIO_Port' undeclared (first use in this function)
+   10 |     HAL_GPIO_WritePin(SCT_NOE_GPIO_Port, SCT_NOE_Pin, GPIO_PIN_SET); // Set NOE high (turn off output)
+      |                       ^~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:10:23: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/sct.c:10:42: error: 'SCT_NOE_Pin' undeclared (first use in this function)
+   10 |     HAL_GPIO_WritePin(SCT_NOE_GPIO_Port, SCT_NOE_Pin, GPIO_PIN_SET); // Set NOE high (turn off output)
+      |                                          ^~~~~~~~~~~
+../Core/Src/sct.c:10:55: error: 'GPIO_PIN_SET' undeclared (first use in this function)
+   10 |     HAL_GPIO_WritePin(SCT_NOE_GPIO_Port, SCT_NOE_Pin, GPIO_PIN_SET); // Set NOE high (turn off output)
+      |                                                       ^~~~~~~~~~~~
+../Core/Src/sct.c:11:23: error: 'SCT_CLK_GPIO_Port' undeclared (first use in this function)
+   11 |     HAL_GPIO_WritePin(SCT_CLK_GPIO_Port, SCT_CLK_Pin, GPIO_PIN_RESET); // Initialize CLK pin to low
+      |                       ^~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:11:42: error: 'SCT_CLK_Pin' undeclared (first use in this function)
+   11 |     HAL_GPIO_WritePin(SCT_CLK_GPIO_Port, SCT_CLK_Pin, GPIO_PIN_RESET); // Initialize CLK pin to low
+      |                                          ^~~~~~~~~~~
+../Core/Src/sct.c:11:55: error: 'GPIO_PIN_RESET' undeclared (first use in this function)
+   11 |     HAL_GPIO_WritePin(SCT_CLK_GPIO_Port, SCT_CLK_Pin, GPIO_PIN_RESET); // Initialize CLK pin to low
+      |                                                       ^~~~~~~~~~~~~~
+../Core/Src/sct.c:12:23: error: 'SCT_SDI_GPIO_Port' undeclared (first use in this function)
+   12 |     HAL_GPIO_WritePin(SCT_SDI_GPIO_Port, SCT_SDI_Pin, GPIO_PIN_RESET); // Initialize SDI pin to low
+      |                       ^~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:12:42: error: 'SCT_SDI_Pin' undeclared (first use in this function)
+   12 |     HAL_GPIO_WritePin(SCT_SDI_GPIO_Port, SCT_SDI_Pin, GPIO_PIN_RESET); // Initialize SDI pin to low
+      |                                          ^~~~~~~~~~~
+../Core/Src/sct.c: At top level:
+../Core/Src/sct.c:15:14: error: unknown type name 'uint32_t'
+   15 | void sct_led(uint32_t value) {
+      |              ^~~~~~~~
+../Core/Src/sct.c:8:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+    7 | #include "sct.h"
+  +++ |+#include <stdint.h>
+    8 | 
+../Core/Src/sct.c:30:16: error: unknown type name 'uint16_t'
+   30 | void sct_value(uint16_t value){
+      |                ^~~~~~~~
+../Core/Src/sct.c:30:16: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:04:58 **** Incremental Build of configuration Debug for project CV03 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+In file included from ../Core/Src/sct.c:7:
+../Core/Inc/sct.h:12:16: error: unknown type name 'uint16_t'
+   12 | void sct_value(uint16_t value);
+      |                ^~~~~~~~
+../Core/Inc/sct.h:1:1: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  +++ |+#include <stdint.h>
+    1 | /*
+../Core/Inc/sct.h:13:14: error: unknown type name 'uint32_t'
+   13 | void sct_led(uint32_t value);
+      |              ^~~~~~~~
+../Core/Inc/sct.h:13:14: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:05:00 **** Incremental Build of configuration Debug for project CV03 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+In file included from ../Core/Src/sct.c:7:
+../Core/Inc/sct.h:12:16: error: unknown type name 'uint16_t'
+   12 | void sct_value(uint16_t value);
+      |                ^~~~~~~~
+../Core/Inc/sct.h:1:1: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  +++ |+#include <stdint.h>
+    1 | /*
+../Core/Inc/sct.h:13:14: error: unknown type name 'uint32_t'
+   13 | void sct_led(uint32_t value);
+      |              ^~~~~~~~
+../Core/Inc/sct.h:13:14: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:05:15 **** Incremental Build of configuration Debug for project CV03 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+arm-none-eabi-gcc -o "CV03.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV03\CV03\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV03.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV03.elf
+ 
+arm-none-eabi-size   CV03.elf 
+arm-none-eabi-objdump -h -S  CV03.elf  > "CV03.list"
+   text	   data	    bss	    dec	    hex	filename
+   9080	     20	   1772	  10872	   2a78	CV03.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV03.list
+ 
+17:05:22 **** Incremental Build of configuration Debug for project CV03 ****
+make -j4 all 
+arm-none-eabi-size   CV03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9080	     20	   1772	  10872	   2a78	CV03.elf
+Finished building: default.size.stdout
+ 
+17:05:35 **** Incremental Build of configuration Debug for project CV03 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+arm-none-eabi-gcc -o "CV03.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV03\CV03\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV03.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV03.elf
+ 
+arm-none-eabi-size   CV03.elf 
+arm-none-eabi-objdump -h -S  CV03.elf  > "CV03.list"
+   text	   data	    bss	    dec	    hex	filename
+   9080	     20	   1772	  10872	   2a78	CV03.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV03.list
+ 

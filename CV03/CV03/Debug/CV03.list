@@ -37,15 +37,15 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  16 .debug_rnglists 000008b2  00000000  00000000  0002d6f0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_macro  0000f813  00000000  00000000  0002dfa2  2**0
+ 17 .debug_macro  0000f80f  00000000  00000000  0002dfa2  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_line   0000d362  00000000  00000000  0003d7b5  2**0
+ 18 .debug_line   0000d362  00000000  00000000  0003d7b1  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_str    000611fc  00000000  00000000  0004ab17  2**0
+ 19 .debug_str    000611fc  00000000  00000000  0004ab13  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .debug_frame  00002790  00000000  00000000  000abd14  2**2
+ 20 .debug_frame  00002790  00000000  00000000  000abd10  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 0000006c  00000000  00000000  000ae4a4  2**0
+ 21 .debug_line_str 0000006c  00000000  00000000  000ae4a0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -848,10 +848,10 @@ __STATIC_FORCEINLINE void __disable_irq(void)
 	...
 
 08000570 <sct_init>:
-//}
-
-//void sct_value(uint16_t value){
-//}
+ *      Author: xcaban01
+ */
+#include "main.h"
+#include "sct.h"
 
 void sct_init(void) {
  8000570:	b580      	push	{r7, lr}

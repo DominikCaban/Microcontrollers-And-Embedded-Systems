@@ -4,7 +4,6 @@
  *  Created on: Oct 11, 2023
  *      Author: xcaban01
  */
-#include "main.h"
 #include "sct.h"
 
 void sct_init(void) {

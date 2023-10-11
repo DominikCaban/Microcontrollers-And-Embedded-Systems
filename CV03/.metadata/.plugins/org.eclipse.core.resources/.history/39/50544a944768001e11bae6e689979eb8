@@ -4,8 +4,8 @@
  *  Created on: Oct 11, 2023
  *      Author: xcaban01
  */
-#include "main.h"
 #include "sct.h"
+#include "main.h"
 
 void sct_init(void) {
     HAL_GPIO_WritePin(SCT_NOE_GPIO_Port, SCT_NOE_Pin, GPIO_PIN_SET); // Set NOE high (turn off output)
