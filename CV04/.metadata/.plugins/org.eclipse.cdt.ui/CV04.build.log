@@ -1,0 +1,24 @@
+16:13:11 **** Incremental Build of configuration Debug for project CV04 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:106:3: warning: implicit declaration of function 'sct_init' [-Wimplicit-function-declaration]
+  106 |   sct_init();
+      |   ^~~~~~~~
+../Core/Src/main.c:117:17: warning: implicit declaration of function 'sct_value' [-Wimplicit-function-declaration]
+  117 |                 sct_value(raw_pot*(500+1)/4096, raw_pot*9/4096);
+      |                 ^~~~~~~~~
+arm-none-eabi-gcc -o "CV04.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV04.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV04.elf
+ 
+arm-none-eabi-size   CV04.elf 
+arm-none-eabi-objdump -h -S  CV04.elf  > "CV04.list"
+   text	   data	    bss	    dec	    hex	filename
+  10596	     20	   1772	  12388	   3064	CV04.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV04.list
+ 
+
+16:13:12 Build Finished. 0 errors, 2 warnings. (took 1s.221ms)
+
