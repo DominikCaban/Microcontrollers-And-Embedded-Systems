@@ -1092,7 +1092,6 @@ void blikac(void) {
 
 
 
-
 void tlacitka(void) {
  8000690:	b580      	push	{r7, lr}
  8000692:	b082      	sub	sp, #8

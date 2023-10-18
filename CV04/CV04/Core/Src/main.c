@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "sct.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -31,6 +31,13 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+
+/* Temperature sensor calibration value address */
+#define TEMP110_CAL_ADDR ((uint16_t*) ((uint32_t) 0x1FFFF7C2))
+#define TEMP30_CAL_ADDR ((uint16_t*) ((uint32_t) 0x1FFFF7B8))
+
+/* Internal voltage reference calibration value address */
+#define VREFINT_CAL_ADDR ((uint16_t*) ((uint32_t) 0x1FFFF7BA))
 
 /* USER CODE END PD */
 
@@ -54,21 +61,45 @@ static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_ADC_Init(void);
 /* USER CODE BEGIN PFP */
-
+static volatile uint32_t voltage;
+static volatile uint32_t temperature;
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 static volatile uint32_t raw_pot;
-void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc)
 {
- static uint32_t avg_pot;
- uint8_t ADC_Q = 12;
- raw_pot = avg_pot >> ADC_Q;
- avg_pot -= raw_pot;
- avg_pot += HAL_ADC_GetValue(hadc);
-}
+	static uint8_t channel;
 
+	//exponential accumulation of trimmer value
+	if (channel == 0) {
+		static uint32_t avg_pot;
+		uint8_t ADC_Q = 12;
+		raw_pot = avg_pot >> ADC_Q;
+		avg_pot -= raw_pot;
+		avg_pot += HAL_ADC_GetValue(hadc);
+	}
+
+	 //raw temperature
+	if (channel == 1) {
+		temperature = (HAL_ADC_GetValue(hadc) - (int32_t) (*TEMP30_CAL_ADDR));
+		temperature = temperature * (int32_t) (110 - 30);
+		temperature = temperature
+				/ (int32_t) (*TEMP110_CAL_ADDR - *TEMP30_CAL_ADDR);
+		temperature = temperature + 30;
+	}
+
+	//raw voltage
+	if (channel == 2) {
+		voltage = 330 * (*VREFINT_CAL_ADDR) / HAL_ADC_GetValue(hadc);
+	}
+
+	if (__HAL_ADC_GET_FLAG(hadc, ADC_FLAG_EOS))
+			channel = 0;
+		else
+			channel++;
+}
 /* USER CODE END 0 */
 
 /**
@@ -78,8 +109,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
-
+	static enum { SHOW_POT, SHOW_VOLT, SHOW_TEMP } current_state = SHOW_POT;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -109,18 +139,47 @@ int main(void)
   /* USER CODE END 2 */
 
   /* Infinite loop */
-	/* USER CODE BEGIN WHILE */
+  /* USER CODE BEGIN WHILE */
+  uint32_t set_tick = 0;
 	while (1) {
-		// delay
-		HAL_Delay(50);
-		// converting value 0-500
-		sct_value(raw_pot*(500+1)/4096, raw_pot*9/4096);
 
-		/* USER CODE END WHILE */
+		// reading SV1 for current VOLTAGE
+		if (HAL_GPIO_ReadPin(S1_GPIO_Port, S1_Pin) == GPIO_PIN_RESET) {
+			current_state = SHOW_VOLT;
+			set_tick = HAL_GetTick();
+		}
 
-		/* USER CODE BEGIN 3 */
-	}
-	/* USER CODE END 3 */
+		// reading SV2 for current TEMP
+		if (HAL_GPIO_ReadPin(S2_GPIO_Port, S2_Pin) == GPIO_PIN_RESET) {
+			current_state = SHOW_TEMP;
+			set_tick = HAL_GetTick();
+		}
+
+		// handling time for displaying pot value after 1 second
+		if (HAL_GetTick() >= (set_tick + 1000)) {
+			current_state = SHOW_POT;
+		}
+
+		switch (current_state) {
+		// displaying analog pot value
+		case SHOW_POT:
+			sct_value(raw_pot * (500 + 1) / 4096, raw_pot * 9 / 4096); // converting value 0-500
+			break;
+		// displaying voltage value
+		case SHOW_VOLT:
+			sct_value(voltage, 0);
+			break;
+	    // displaying temperature value
+		case SHOW_TEMP:
+			sct_value(temperature, 0);
+			break;
+		}
+    /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
+		}
+
+  /* USER CODE END 3 */
 }
 
 /**
@@ -211,6 +270,22 @@ static void MX_ADC_Init(void)
   {
     Error_Handler();
   }
+
+  /** Configure for the selected ADC regular channel to be converted.
+  */
+  sConfig.Channel = ADC_CHANNEL_TEMPSENSOR;
+  if (HAL_ADC_ConfigChannel(&hadc, &sConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure for the selected ADC regular channel to be converted.
+  */
+  sConfig.Channel = ADC_CHANNEL_VREFINT;
+  if (HAL_ADC_ConfigChannel(&hadc, &sConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
   /* USER CODE BEGIN ADC_Init 2 */
 
   /* USER CODE END ADC_Init 2 */
@@ -273,7 +348,8 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, SCT_NOE_Pin|SCT_CLK_Pin|SCT_SDI_Pin|SCT_NLA_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, SCT_NOE_Pin|SCT_CLK_Pin|SCT_SDI_Pin|SCT_NLA_Pin
+                          |GPIO_PIN_8, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : B1_Pin */
   GPIO_InitStruct.Pin = B1_Pin;
@@ -294,8 +370,10 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(LD2_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : SCT_NOE_Pin SCT_CLK_Pin SCT_SDI_Pin SCT_NLA_Pin */
-  GPIO_InitStruct.Pin = SCT_NOE_Pin|SCT_CLK_Pin|SCT_SDI_Pin|SCT_NLA_Pin;
+  /*Configure GPIO pins : SCT_NOE_Pin SCT_CLK_Pin SCT_SDI_Pin SCT_NLA_Pin
+                           PB8 */
+  GPIO_InitStruct.Pin = SCT_NOE_Pin|SCT_CLK_Pin|SCT_SDI_Pin|SCT_NLA_Pin
+                          |GPIO_PIN_8;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;

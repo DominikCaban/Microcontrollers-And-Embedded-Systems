@@ -75,7 +75,6 @@ void blikac(void) {
 
 
 
-
 void tlacitka(void) {
 
 	static uint32_t delay_temp;
