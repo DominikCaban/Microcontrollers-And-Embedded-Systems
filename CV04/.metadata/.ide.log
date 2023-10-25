@@ -1038,3 +1038,77 @@
 2023-10-18 15:17:45,443 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 3877mS.
 2023-10-18 15:17:45,444 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
 2023-10-18 15:17:45,446 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-10-18 16:17:12,215 [INFO] Gpio:273 - dependency for GPIO [ADC, RCC, SYS, USART2]
+2023-10-18 16:17:22,326 [INFO] Gpio:273 - dependency for GPIO [ADC, RCC, SYS, USART2]
+2023-10-18 16:17:22,368 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-10-18 16:17:39,413 [INFO] Gpio:273 - dependency for GPIO [ADC, RCC, SYS, USART2]
+2023-10-18 16:17:39,511 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-10-18 16:18:13,748 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 268278104 Bytes (835715072)
+2023-10-18 16:18:15,430 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 285581656 Bytes (835715072)
+2023-10-18 16:18:18,942 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 319658328 Bytes (835715072)
+2023-10-18 16:18:19,136 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2023-10-18 16:18:19,136 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-10-18 16:18:19,136 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-10-18 16:18:19,136 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-10-18 16:18:19,136 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-10-18 16:18:19,136 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-10-18 16:18:19,137 [INFO] CodeGenerator:799 - code generatio: config db path: C:\appz\ST\STM32CubeIDE_1.10.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-10-18 16:18:19,261 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\MXTmpFiles\license.tmp_save
+2023-10-18 16:18:19,455 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\MXTmpFiles\license.tmp
+2023-10-18 16:18:19,513 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\MXTmpFiles\gpio.tmp_save
+2023-10-18 16:18:19,668 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\MXTmpFiles\gpio.tmp
+2023-10-18 16:18:19,826 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\Core\Src\stm32f0xx_it.c_save
+2023-10-18 16:18:20,136 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\Core\Src\stm32f0xx_it.c
+2023-10-18 16:18:20,143 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\Core\Inc\stm32f0xx_it.h_save
+2023-10-18 16:18:20,244 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\Core\Inc\stm32f0xx_it.h
+2023-10-18 16:18:20,264 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\Core\Src\stm32f0xx_hal_msp.c_save
+2023-10-18 16:18:20,403 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\Core\Src\stm32f0xx_hal_msp.c
+2023-10-18 16:18:20,408 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\MXTmpFiles\system.tmp_save
+2023-10-18 16:18:20,611 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\MXTmpFiles\system.tmp
+2023-10-18 16:18:20,632 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\Core\Inc\stm32f0xx_hal_conf.h_save
+2023-10-18 16:18:20,756 [INFO] CodeEngine:335 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\Core\Inc\stm32f0xx_hal_conf.h
+2023-10-18 16:18:20,792 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\Core\Inc\main.h_save
+2023-10-18 16:18:20,932 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\Core\Inc\main.h
+2023-10-18 16:18:20,948 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\Core\Src\main.c_save
+2023-10-18 16:18:21,134 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\Core\Src\main.c
+2023-10-18 16:18:21,710 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 140mS.
+2023-10-18 16:18:21,714 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-10-18 16:18:21,929 [INFO] ConfigFileManager:1457 - The Die is : DIE440
+2023-10-18 16:18:23,876 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 2162mS.
+2023-10-18 16:18:23,876 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-10-18 16:18:23,879 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-10-18 17:15:11,549 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 632318664 Bytes (843055104)
+2023-10-18 17:15:12,857 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 650139656 Bytes (843055104)
+2023-10-18 17:15:13,339 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 712531976 Bytes (843055104)
+2023-10-18 17:15:13,606 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2023-10-18 17:15:13,606 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-10-18 17:15:13,606 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-10-18 17:15:13,606 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-10-18 17:15:13,606 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-10-18 17:15:13,606 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-10-18 17:15:13,607 [INFO] CodeGenerator:799 - code generatio: config db path: C:\appz\ST\STM32CubeIDE_1.10.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-10-18 17:15:13,755 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\MXTmpFiles\license.tmp_save
+2023-10-18 17:15:13,930 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\MXTmpFiles\license.tmp
+2023-10-18 17:15:13,986 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\MXTmpFiles\gpio.tmp_save
+2023-10-18 17:15:14,115 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\MXTmpFiles\gpio.tmp
+2023-10-18 17:15:14,287 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\Core\Src\stm32f0xx_it.c_save
+2023-10-18 17:15:14,537 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\Core\Src\stm32f0xx_it.c
+2023-10-18 17:15:14,553 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\Core\Inc\stm32f0xx_it.h_save
+2023-10-18 17:15:14,631 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\Core\Inc\stm32f0xx_it.h
+2023-10-18 17:15:14,647 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\Core\Src\stm32f0xx_hal_msp.c_save
+2023-10-18 17:15:14,772 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\Core\Src\stm32f0xx_hal_msp.c
+2023-10-18 17:15:14,787 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\MXTmpFiles\system.tmp_save
+2023-10-18 17:15:14,865 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\MXTmpFiles\system.tmp
+2023-10-18 17:15:14,897 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\Core\Inc\stm32f0xx_hal_conf.h_save
+2023-10-18 17:15:15,022 [INFO] CodeEngine:335 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\Core\Inc\stm32f0xx_hal_conf.h
+2023-10-18 17:15:15,053 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\Core\Inc\main.h_save
+2023-10-18 17:15:15,184 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\Core\Inc\main.h
+2023-10-18 17:15:15,199 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\Core\Src\main.c_save
+2023-10-18 17:15:15,345 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV04\CV04\Core\Src\main.c
+2023-10-18 17:15:15,934 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 138mS.
+2023-10-18 17:15:15,938 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-10-18 17:15:16,127 [INFO] ConfigFileManager:1457 - The Die is : DIE440
+2023-10-18 17:15:17,640 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 1702mS.
+2023-10-18 17:15:17,641 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-10-18 17:15:17,643 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-10-18 17:46:08,699 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
