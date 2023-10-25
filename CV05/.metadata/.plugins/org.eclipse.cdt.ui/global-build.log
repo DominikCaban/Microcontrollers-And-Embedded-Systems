@@ -145,3 +145,455 @@ arm-none-eabi-size   CV05.elf
   13964	    112	   2432	  16508	   407c	CV05.elf
 Finished building: default.size.stdout
  
+15:45:23 **** Incremental Build of configuration Debug for project CV05 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CV05.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV05.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV05.elf
+ 
+arm-none-eabi-size   CV05.elf 
+arm-none-eabi-objdump -h -S  CV05.elf  > "CV05.list"
+   text	   data	    bss	    dec	    hex	filename
+  13992	    112	   2432	  16536	   4098	CV05.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV05.list
+ 
+15:45:27 **** Incremental Build of configuration Debug for project CV05 ****
+make -j4 all 
+arm-none-eabi-size   CV05.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13992	    112	   2432	  16536	   4098	CV05.elf
+Finished building: default.size.stdout
+ 
+15:46:48 **** Incremental Build of configuration Debug for project CV05 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CV05.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV05.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV05.elf
+ 
+arm-none-eabi-size   CV05.elf 
+arm-none-eabi-objdump -h -S  CV05.elf  > "CV05.list"
+   text	   data	    bss	    dec	    hex	filename
+  14188	    112	   2432	  16732	   415c	CV05.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV05.list
+ 
+15:47:12 **** Incremental Build of configuration Debug for project CV05 ****
+make -j4 all 
+arm-none-eabi-size   CV05.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14188	    112	   2432	  16732	   415c	CV05.elf
+Finished building: default.size.stdout
+ 
+15:47:31 **** Incremental Build of configuration Debug for project CV05 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CV05.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV05.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV05.elf
+ 
+arm-none-eabi-size   CV05.elf 
+arm-none-eabi-objdump -h -S  CV05.elf  > "CV05.list"
+   text	   data	    bss	    dec	    hex	filename
+  14188	    112	   2432	  16732	   415c	CV05.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV05.list
+ 
+15:51:30 **** Incremental Build of configuration Debug for project CV05 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uart_process_command':
+../Core/Src/main.c:73:17: warning: implicit declaration of function 'strtok' [-Wimplicit-function-declaration]
+   73 |         token = strtok(cmd, " ");
+      |                 ^~~~~~
+../Core/Src/main.c:73:15: warning: assignment to 'char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   73 |         token = strtok(cmd, " ");
+      |               ^
+../Core/Src/main.c:74:13: warning: implicit declaration of function 'strcasecmp' [-Wimplicit-function-declaration]
+   74 |         if (strcasecmp(token, "HELLO") == 0) {
+      |             ^~~~~~~~~~
+arm-none-eabi-gcc -o "CV05.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV05.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV05.elf
+ 
+arm-none-eabi-size   CV05.elf 
+arm-none-eabi-objdump -h -S  CV05.elf  > "CV05.list"
+   text	   data	    bss	    dec	    hex	filename
+  15196	    112	   2432	  17740	   454c	CV05.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV05.list
+ 
+15:51:42 **** Incremental Build of configuration Debug for project CV05 ****
+make -j4 all 
+arm-none-eabi-size   CV05.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15196	    112	   2432	  17740	   454c	CV05.elf
+Finished building: default.size.stdout
+ 
+15:55:34 **** Incremental Build of configuration Debug for project CV05 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uart_process_command':
+../Core/Src/main.c:73:17: warning: implicit declaration of function 'strtok' [-Wimplicit-function-declaration]
+   73 |         token = strtok(cmd, " ");
+      |                 ^~~~~~
+../Core/Src/main.c:73:15: warning: assignment to 'char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   73 |         token = strtok(cmd, " ");
+      |               ^
+../Core/Src/main.c:74:13: warning: implicit declaration of function 'strcasecmp' [-Wimplicit-function-declaration]
+   74 |         if (strcasecmp(token, "HELLO") == 0) {
+      |             ^~~~~~~~~~
+../Core/Src/main.c:77:23: warning: assignment to 'char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   77 |                 token = strtok(NULL, " ");
+      |                       ^
+../Core/Src/main.c:79:17: warning: implicit declaration of function 'LL_GPIO_SetOutputPin' [-Wimplicit-function-declaration]
+   79 |                 LL_GPIO_SetOutputPin(LD2_GPIO_Port, LD2_Pin);
+      |                 ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:80:9: error: expected '}' before 'else'
+   80 |         else if (strcasecmp(token, "OFF") {
+      |         ^~~~
+../Core/Src/main.c:80:42: error: expected ')' before '{' token
+   80 |         else if (strcasecmp(token, "OFF") {
+      |                 ~                        ^~
+      |                                          )
+../Core/Src/main.c:85:17: error: expected expression before '}' token
+   85 |                 }
+      |                 ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:56:12 **** Incremental Build of configuration Debug for project CV05 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uart_process_command':
+../Core/Src/main.c:73:17: warning: implicit declaration of function 'strtok' [-Wimplicit-function-declaration]
+   73 |         token = strtok(cmd, " ");
+      |                 ^~~~~~
+../Core/Src/main.c:73:15: warning: assignment to 'char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   73 |         token = strtok(cmd, " ");
+      |               ^
+../Core/Src/main.c:74:13: warning: implicit declaration of function 'strcasecmp' [-Wimplicit-function-declaration]
+   74 |         if (strcasecmp(token, "HELLO") == 0) {
+      |             ^~~~~~~~~~
+../Core/Src/main.c:77:23: warning: assignment to 'char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   77 |                 token = strtok(NULL, " ");
+      |                       ^
+../Core/Src/main.c:79:17: warning: implicit declaration of function 'LL_GPIO_SetOutputPin' [-Wimplicit-function-declaration]
+   79 |                 LL_GPIO_SetOutputPin(LD2_GPIO_Port, LD2_Pin);
+      |                 ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:81:9: error: expected '}' before 'else'
+   81 |         else if (strcasecmp(token, "OFF") {
+      |         ^~~~
+../Core/Src/main.c:81:42: error: expected ')' before '{' token
+   81 |         else if (strcasecmp(token, "OFF") {
+      |                 ~                        ^~
+      |                                          )
+../Core/Src/main.c:84:9: error: expected expression before '}' token
+   84 |         }
+      |         ^
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:90:1: error: expected identifier or '(' before '}' token
+   90 | }
+      | ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:56:49 **** Incremental Build of configuration Debug for project CV05 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uart_process_command':
+../Core/Src/main.c:73:17: warning: implicit declaration of function 'strtok' [-Wimplicit-function-declaration]
+   73 |         token = strtok(cmd, " ");
+      |                 ^~~~~~
+../Core/Src/main.c:73:15: warning: assignment to 'char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   73 |         token = strtok(cmd, " ");
+      |               ^
+../Core/Src/main.c:74:13: warning: implicit declaration of function 'strcasecmp' [-Wimplicit-function-declaration]
+   74 |         if (strcasecmp(token, "HELLO") == 0) {
+      |             ^~~~~~~~~~
+../Core/Src/main.c:77:23: warning: assignment to 'char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   77 |                 token = strtok(NULL, " ");
+      |                       ^
+../Core/Src/main.c:80:17: warning: implicit declaration of function 'LL_GPIO_SetOutputPin' [-Wimplicit-function-declaration]
+   80 |                 LL_GPIO_SetOutputPin(LD2_GPIO_Port, LD2_Pin);
+      |                 ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:82:42: error: expected ')' before '{' token
+   82 |         else if (strcasecmp(token, "OFF") {
+      |                 ~                        ^~
+      |                                          )
+../Core/Src/main.c:85:9: error: expected expression before '}' token
+   85 |         }
+      |         ^
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:86:32: error: expected declaration specifiers or '...' before string constant
+   86 |                         printf("OK\n");
+      |                                ^~~~~~
+../Core/Src/main.c:87:17: error: expected identifier or '(' before '}' token
+   87 |                 }
+      |                 ^
+../Core/Src/main.c:91:1: error: expected identifier or '(' before '}' token
+   91 | }
+      | ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:58:48 **** Incremental Build of configuration Debug for project CV05 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uart_process_command':
+../Core/Src/main.c:73:17: warning: implicit declaration of function 'strtok' [-Wimplicit-function-declaration]
+   73 |         token = strtok(cmd, " ");
+      |                 ^~~~~~
+../Core/Src/main.c:73:15: warning: assignment to 'char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   73 |         token = strtok(cmd, " ");
+      |               ^
+../Core/Src/main.c:74:13: warning: implicit declaration of function 'strcasecmp' [-Wimplicit-function-declaration]
+   74 |         if (strcasecmp(token, "HELLO") == 0) {
+      |             ^~~~~~~~~~
+../Core/Src/main.c:77:23: warning: assignment to 'char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   77 |                 token = strtok(NULL, " ");
+      |                       ^
+../Core/Src/main.c:79:17: warning: implicit declaration of function 'LL_GPIO_SetOutputPin' [-Wimplicit-function-declaration]
+   79 |                 LL_GPIO_SetOutputPin(LD2_GPIO_Port, LD2_Pin);
+      |                 ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:82:17: warning: implicit declaration of function 'LL_GPIO_ResetOutputPin' [-Wimplicit-function-declaration]
+   82 |                 LL_GPIO_ResetOutputPin(LD2_GPIO_Port, LD2_Pin);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "CV05.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV05.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/appz/ST/STM32CubeIDE_1.10.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `uart_process_command':
+C:/Temp/Caban/Microcontrollers-And-Embedded-Systems/CV05/CV05/Debug/../Core/Src/main.c:79: undefined reference to `LL_GPIO_SetOutputPin'
+C:/appz/ST/STM32CubeIDE_1.10.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Temp/Caban/Microcontrollers-And-Embedded-Systems/CV05/CV05/Debug/../Core/Src/main.c:82: undefined reference to `LL_GPIO_ResetOutputPin'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: CV05.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:00:08 **** Incremental Build of configuration Debug for project CV05 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uart_process_command':
+../Core/Src/main.c:73:17: warning: implicit declaration of function 'strtok' [-Wimplicit-function-declaration]
+   73 |         token = strtok(cmd, " ");
+      |                 ^~~~~~
+../Core/Src/main.c:73:15: warning: assignment to 'char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   73 |         token = strtok(cmd, " ");
+      |               ^
+../Core/Src/main.c:74:13: warning: implicit declaration of function 'strcasecmp' [-Wimplicit-function-declaration]
+   74 |         if (strcasecmp(token, "HELLO") == 0) {
+      |             ^~~~~~~~~~
+../Core/Src/main.c:77:23: warning: assignment to 'char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   77 |                 token = strtok(NULL, " ");
+      |                       ^
+../Core/Src/main.c:80:17: warning: implicit declaration of function 'LL_GPIO_SetOutputPin' [-Wimplicit-function-declaration]
+   80 |                 LL_GPIO_SetOutputPin(LD2_GPIO_Port, LD2_Pin);
+      |                 ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:83:17: warning: implicit declaration of function 'LL_GPIO_ResetOutputPin' [-Wimplicit-function-declaration]
+   83 |                 LL_GPIO_ResetOutputPin(LD2_GPIO_Port, LD2_Pin);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:95:1: error: expected identifier or '(' before '}' token
+   95 | }
+      | ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:00:43 **** Incremental Build of configuration Debug for project CV05 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uart_process_command':
+../Core/Src/main.c:73:17: warning: implicit declaration of function 'strtok' [-Wimplicit-function-declaration]
+   73 |         token = strtok(cmd, " ");
+      |                 ^~~~~~
+../Core/Src/main.c:73:15: warning: assignment to 'char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   73 |         token = strtok(cmd, " ");
+      |               ^
+../Core/Src/main.c:74:13: warning: implicit declaration of function 'strcasecmp' [-Wimplicit-function-declaration]
+   74 |         if (strcasecmp(token, "HELLO") == 0) {
+      |             ^~~~~~~~~~
+../Core/Src/main.c:77:23: warning: assignment to 'char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   77 |                 token = strtok(NULL, " ");
+      |                       ^
+../Core/Src/main.c:80:17: warning: implicit declaration of function 'HAL_GPIO_SetOutputPin' [-Wimplicit-function-declaration]
+   80 |                 HAL_GPIO_SetOutputPin(LD2_GPIO_Port, LD2_Pin);
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:83:17: warning: implicit declaration of function 'HAL_GPIO_ResetOutputPin' [-Wimplicit-function-declaration]
+   83 |                 HAL_GPIO_ResetOutputPin(LD2_GPIO_Port, LD2_Pin);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:95:1: error: expected identifier or '(' before '}' token
+   95 | }
+      | ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:01:24 **** Incremental Build of configuration Debug for project CV05 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uart_process_command':
+../Core/Src/main.c:81:17: warning: implicit declaration of function 'HAL_GPIO_SetOutputPin' [-Wimplicit-function-declaration]
+   81 |                 HAL_GPIO_SetOutputPin(LD2_GPIO_Port, LD2_Pin);
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:84:17: warning: implicit declaration of function 'HAL_GPIO_ResetOutputPin' [-Wimplicit-function-declaration]
+   84 |                 HAL_GPIO_ResetOutputPin(LD2_GPIO_Port, LD2_Pin);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:96:1: error: expected identifier or '(' before '}' token
+   96 | }
+      | ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:02:08 **** Incremental Build of configuration Debug for project CV05 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uart_process_command':
+../Core/Src/main.c:81:17: warning: implicit declaration of function 'HAL_GPIO_SetOutputPin' [-Wimplicit-function-declaration]
+   81 |                 HAL_GPIO_SetOutputPin(LD2_GPIO_Port, LD2_Pin);
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:84:17: warning: implicit declaration of function 'HAL_GPIO_ResetOutputPin' [-Wimplicit-function-declaration]
+   84 |                 HAL_GPIO_ResetOutputPin(LD2_GPIO_Port, LD2_Pin);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:97:1: error: expected identifier or '(' before '}' token
+   97 | }
+      | ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:03:27 **** Incremental Build of configuration Debug for project CV05 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uart_process_command':
+../Core/Src/main.c:81:17: warning: implicit declaration of function 'HAL_GPIO_Write'; did you mean 'HAL_GPIO_WritePin'? [-Wimplicit-function-declaration]
+   81 |                 HAL_GPIO_Write(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+      |                 ^~~~~~~~~~~~~~
+      |                 HAL_GPIO_WritePin
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:96:1: error: expected identifier or '(' before '}' token
+   96 | }
+      | ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:03:53 **** Incremental Build of configuration Debug for project CV05 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:96:1: error: expected identifier or '(' before '}' token
+   96 | }
+      | ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:05:07 **** Incremental Build of configuration Debug for project CV05 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uart_process_command':
+../Core/Src/main.c:81:35: error: 'LD1_GPIO_Port' undeclared (first use in this function); did you mean 'LD2_GPIO_Port'?
+   81 |                 HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin, GPIO_PIN_SET);
+      |                                   ^~~~~~~~~~~~~
+      |                                   LD2_GPIO_Port
+../Core/Src/main.c:81:35: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:81:50: error: 'LD1_Pin' undeclared (first use in this function); did you mean 'LD2_Pin'?
+   81 |                 HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin, GPIO_PIN_SET);
+      |                                                  ^~~~~~~
+      |                                                  LD2_Pin
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:107:1: error: expected identifier or '(' before '}' token
+  107 | }
+      | ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:05:17 **** Incremental Build of configuration Debug for project CV05 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uart_process_command':
+../Core/Src/main.c:81:35: error: 'LD1_GPIO_Port' undeclared (first use in this function); did you mean 'LD2_GPIO_Port'?
+   81 |                 HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin, GPIO_PIN_SET);
+      |                                   ^~~~~~~~~~~~~
+      |                                   LD2_GPIO_Port
+../Core/Src/main.c:81:35: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:81:50: error: 'LD1_Pin' undeclared (first use in this function); did you mean 'LD2_Pin'?
+   81 |                 HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin, GPIO_PIN_SET);
+      |                                                  ^~~~~~~
+      |                                                  LD2_Pin
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:07:36 **** Incremental Build of configuration Debug for project CV05 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f0xx_hal_msp.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f0xx_hal_msp.d" -MT"Core/Src/stm32f0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f0xx_it.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f0xx_it.d" -MT"Core/Src/stm32f0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_it.o"
+arm-none-eabi-gcc -o "CV05.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV05.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV05.elf
+ 
+arm-none-eabi-size   CV05.elf 
+arm-none-eabi-objdump -h -S  CV05.elf  > "CV05.list"
+   text	   data	    bss	    dec	    hex	filename
+  15528	    112	   2432	  18072	   4698	CV05.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV05.list
+ 
+16:07:46 **** Incremental Build of configuration Debug for project CV05 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CV05.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV05.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV05.elf
+ 
+arm-none-eabi-size   CV05.elf 
+arm-none-eabi-objdump -h -S  CV05.elf  > "CV05.list"
+   text	   data	    bss	    dec	    hex	filename
+  15528	    112	   2432	  18072	   4698	CV05.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV05.list
+ 
+16:09:42 **** Incremental Build of configuration Debug for project CV05 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CV05.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV05.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV05.elf
+ 
+arm-none-eabi-size   CV05.elf 
+arm-none-eabi-objdump -h -S  CV05.elf  > "CV05.list"
+   text	   data	    bss	    dec	    hex	filename
+  15528	    112	   2432	  18072	   4698	CV05.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV05.list
+ 
+16:09:45 **** Incremental Build of configuration Debug for project CV05 ****
+make -j4 all 
+arm-none-eabi-size   CV05.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15528	    112	   2432	  18072	   4698	CV05.elf
+Finished building: default.size.stdout
+ 
+16:12:04 **** Incremental Build of configuration Debug for project CV05 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f0xx_hal_msp.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f0xx_hal_msp.d" -MT"Core/Src/stm32f0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f0xx_it.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f0xx_it.d" -MT"Core/Src/stm32f0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_it.o"
+arm-none-eabi-gcc -o "CV05.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV05.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV05.elf
+ 
+arm-none-eabi-size   CV05.elf 
+arm-none-eabi-objdump -h -S  CV05.elf  > "CV05.list"
+   text	   data	    bss	    dec	    hex	filename
+  15528	    112	   2432	  18072	   4698	CV05.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV05.list
+ 
+16:13:22 **** Incremental Build of configuration Debug for project CV05 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CV05.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV05.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV05.elf
+ 
+arm-none-eabi-size   CV05.elf 
+arm-none-eabi-objdump -h -S  CV05.elf  > "CV05.list"
+   text	   data	    bss	    dec	    hex	filename
+  15544	    112	   2432	  18088	   46a8	CV05.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV05.list
+ 
+16:13:26 **** Incremental Build of configuration Debug for project CV05 ****
+make -j4 all 
+arm-none-eabi-size   CV05.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15544	    112	   2432	  18088	   46a8	CV05.elf
+Finished building: default.size.stdout
+ 
