@@ -21,9 +21,10 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -42,6 +43,7 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
+I2C_HandleTypeDef hi2c1;
 UART_HandleTypeDef huart2;
 DMA_HandleTypeDef hdma_usart2_rx;
 
@@ -59,6 +61,7 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_DMA_Init(void);
 static void MX_USART2_UART_Init(void);
+static void MX_I2C1_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -68,32 +71,84 @@ static void MX_USART2_UART_Init(void);
 
 
 static void uart_process_command(char *cmd) {
-//printf("prijate: '%s'\n", cmd);
 
-	char *token;
+char *token;
+// HELLO
 	token = strtok(cmd, " ");
 	if (strcasecmp(token, "HELLO") == 0) {
-		printf("Komunikace OK\n");
+		printf("Komunikacia OK\n");
+// LED1
 	} else if (strcasecmp(token, "LED1") == 0) {
 		token = strtok(NULL, " ");
 		if (strcasecmp(token, "ON") == 0) {
 			HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin, GPIO_PIN_SET);
-			printf("OK\n");
+			printf("Done\n");
 
 		} else if (strcasecmp(token, "OFF") == 0) {
 			HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin, GPIO_PIN_RESET);
-			printf("OK\n");
+			printf("Done\n");
 		}
 	}
-
+// LED2
 	else if (strcasecmp(token, "LED2") == 0) {
 		token = strtok(NULL, " ");
 		if (strcasecmp(token, "ON") == 0) {
 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
-			printf("OK\n");
+			printf("Done\n");
 		} else if (strcasecmp(token, "OFF") == 0) {
 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
-			printf("OK\n");
+			printf("Done\n");
+		}
+	}
+
+// STATUS
+	else if (strcasecmp(token, "STATUS") == 0) {
+		uint8_t LED1 = HAL_GPIO_ReadPin(LD1_GPIO_Port, LD1_Pin);
+		uint8_t LED2 = HAL_GPIO_ReadPin(LD2_GPIO_Port, LD2_Pin);
+		const char *LED1_text;
+		const char *LED2_text;
+		if (LED1 == 0) {
+			LED1_text = "ON";
+		} else if (LED1 == 1) {
+			LED1_text = "OFF";
+		}
+		if (LED2 == 0) {
+			LED2_text = "ON";
+		} else if (LED2 == 1) {
+			LED2_text = "OFF";
+		}
+		printf("LED 1 STATUS:'%s' LED 2 STATUS:'%s'\n", LED1_text, LED2_text);
+	}
+
+
+// READ
+	else if (strcasecmp(token, "READ") == 0) {
+	    token = strtok(NULL, " ");
+	    uint16_t address = atoi(token);
+	    uint8_t value;
+	    HAL_I2C_Mem_Read(&hi2c1, 0xA0, address, I2C_MEMADD_SIZE_16BIT, &value, 1, 1000);
+	    printf("Adresa 0x%04X = 0x%02X\n", address, value);
+	}
+
+// WRITE
+		else if (strcasecmp(token, "WRITE") == 0) {
+			token = strtok(NULL, " ");
+			uint16_t address = atoi(token);
+			token = strtok(NULL, " ");
+			uint8_t value = atoi(token);
+			HAL_I2C_Mem_Write(&hi2c1, 0xA0, address, I2C_MEMADD_SIZE_16BIT, &value, 1, 1000);
+			/* Check if the EEPROM is ready for a new operation */
+			while (HAL_I2C_IsDeviceReady(&hi2c1, 0xA0, 300, 1000) == HAL_TIMEOUT) {}
+			printf("Done\n");
+		}
+
+
+// DUMP
+		else if (strcasecmp(token, "DUMP") == 0) {
+			uint8_t value;
+			for(uint16_t address = 0x0000; address < 0x000F; address = address + 1 ){
+				HAL_I2C_Mem_Read(&hi2c1, 0xA0, address, I2C_MEMADD_SIZE_16BIT, &value, 1, 1000);
+				printf("Adresa 0x%04X = 0x%02X\n", address, value);
 		}
 	}
 
@@ -150,12 +205,10 @@ int main(void)
   MX_GPIO_Init();
   MX_DMA_Init();
   MX_USART2_UART_Init();
+  MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
   HAL_UART_Receive_DMA(&huart2, uart_rx_buf, RX_BUFFER_LEN);
-
-  // printf("Hello, welcome! \n");
-
-  /* USER CODE END 2 */
+   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
@@ -186,6 +239,7 @@ void SystemClock_Config(void)
 {
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+  RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
 
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
@@ -214,6 +268,60 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_I2C1;
+  PeriphClkInit.I2c1ClockSelection = RCC_I2C1CLKSOURCE_HSI;
+  if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
+  {
+    Error_Handler();
+  }
+}
+
+/**
+  * @brief I2C1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_I2C1_Init(void)
+{
+
+  /* USER CODE BEGIN I2C1_Init 0 */
+
+  /* USER CODE END I2C1_Init 0 */
+
+  /* USER CODE BEGIN I2C1_Init 1 */
+
+  /* USER CODE END I2C1_Init 1 */
+  hi2c1.Instance = I2C1;
+  hi2c1.Init.Timing = 0x2000090E;
+  hi2c1.Init.OwnAddress1 = 0;
+  hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+  hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+  hi2c1.Init.OwnAddress2 = 0;
+  hi2c1.Init.OwnAddress2Masks = I2C_OA2_NOMASK;
+  hi2c1.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+  hi2c1.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+  if (HAL_I2C_Init(&hi2c1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Analogue filter
+  */
+  if (HAL_I2CEx_ConfigAnalogFilter(&hi2c1, I2C_ANALOGFILTER_ENABLE) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Digital filter
+  */
+  if (HAL_I2CEx_ConfigDigitalFilter(&hi2c1, 0) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN I2C1_Init 2 */
+
+  /* USER CODE END I2C1_Init 2 */
+
 }
 
 /**
@@ -288,7 +396,7 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, LD2_Pin|SCL_Pin|SDA_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : B1_Pin */
   GPIO_InitStruct.Pin = B1_Pin;
@@ -303,12 +411,12 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(LD1_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : LD2_Pin SCL_Pin SDA_Pin */
-  GPIO_InitStruct.Pin = LD2_Pin|SCL_Pin|SDA_Pin;
+  /*Configure GPIO pin : LD2_Pin */
+  GPIO_InitStruct.Pin = LD2_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+  HAL_GPIO_Init(LD2_GPIO_Port, &GPIO_InitStruct);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */

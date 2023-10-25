@@ -1597,3 +1597,542 @@
 2023-10-25 15:26:44,823 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 2213mS.
 2023-10-25 15:26:44,826 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 3mS.
 2023-10-25 15:26:44,829 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-10-25 16:05:55,491 [INFO] MainUpdater:2868 - connection check result : 10
+2023-10-25 16:05:55,491 [INFO] MainUpdater:2868 - connection check result : 10
+2023-10-25 16:05:55,528 [INFO] MicroXplorer:468 - Change Database Path : 
+2023-10-25 16:05:55,528 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.91
+2023-10-25 16:05:55,553 [WARN] ThirdParty:871 - waiting for thirdparty lock release [close project]
+2023-10-25 16:05:55,553 [INFO] ThirdParty:873 - entering critical section [close project]
+2023-10-25 16:05:55,553 [INFO] ThirdParty:883 - exiting critical section [close project]
+2023-10-25 16:05:55,555 [INFO] PinOutPanel:1499 - setPackage(No Configuration,No Configuration)
+2023-10-25 16:05:55,557 [INFO] UtilMem:75 - Begin LoadConfig() Used Memory: 554196528 Bytes (786432000)
+2023-10-25 16:05:55,558 [INFO] MicroXplorer:468 - Change Database Path : 
+2023-10-25 16:05:55,558 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.91
+2023-10-25 16:05:55,558 [INFO] OpenFileManager:308 - Change cursor
+2023-10-25 16:05:55,570 [INFO] RulesReader:64 - Compatibility file has been processed (293 Rules)
+2023-10-25 16:05:55,573 [INFO] Mcu:1946 - Initializing MCU STM32F030R8Tx STM32F030R8Tx STM32F030R8T6
+2023-10-25 16:05:56,214 [INFO] Context:659 - Trying to add GPIOservice into a context  which must be forbidden
+2023-10-25 16:05:56,329 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2023-10-25 16:05:56,330 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2023-10-25 16:05:56,330 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2023-10-25 16:05:56,330 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2023-10-25 16:05:56,330 [WARN] ModelIntegratedComponent:184 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2023-10-25 16:05:56,339 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,339 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,339 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,339 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,339 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,339 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,339 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,339 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,339 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,339 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,339 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,339 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,339 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,339 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,340 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,340 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,340 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,340 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,340 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,340 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,340 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,340 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,340 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,340 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,340 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,340 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,340 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,340 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,340 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,340 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,340 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,340 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,340 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-10-25 16:05:56,453 [INFO] ThirdPartyModel:298 - Start build external matchings
+2023-10-25 16:05:56,779 [INFO] ThirdPartyModel:316 - End build external matchings
+2023-10-25 16:05:56,793 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (USART2_RX) currently not set
+2023-10-25 16:05:56,793 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (USART2_RX) currently not set
+2023-10-25 16:05:56,793 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (USART2_RX) currently not set
+2023-10-25 16:05:56,793 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (USART2_RX) currently not set
+2023-10-25 16:05:56,793 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (USART2_RX) currently not set
+2023-10-25 16:05:56,793 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (USART2_RX) currently not set
+2023-10-25 16:05:56,793 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (USART2_RX) currently not set
+2023-10-25 16:05:56,793 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (USART2_RX) currently not set
+2023-10-25 16:05:56,794 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2023-10-25 16:05:56,962 [INFO] UtilMem:75 - End LoadConfig() Used Memory: 636495648 Bytes (786432000)
+2023-10-25 16:05:56,999 [WARN] ThirdParty:833 - waiting for thirdparty lock release [change project]
+2023-10-25 16:05:56,999 [INFO] ThirdParty:835 - entering critical section [change project]
+2023-10-25 16:05:56,999 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 1.1.0
+2023-10-25 16:05:56,999 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USBPD 4.1
+2023-10-25 16:05:56,999 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 6.0.0
+2023-10-25 16:05:56,999 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2023-10-25 16:05:56,999 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F4 1.1.0
+2023-10-25 16:05:56,999 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics LIBJPEG 8.0.0
+2023-10-25 16:05:56,999 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSL 5.6.3
+2023-10-25 16:05:56,999 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SMBUS 2.1.0
+2023-10-25 16:05:56,999 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2023-10-25 16:05:56,999 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WB 2.0.0
+2023-10-25 16:05:56,999 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F7 1.1.0
+2023-10-25 16:05:56,999 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L5 2.0.0
+2023-10-25 16:05:57,000 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2023-10-25 16:05:57,000 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 4.2.0
+2023-10-25 16:05:57,000 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :ITTIA_DB I-CUBE-ITTIADB 8.8.0
+2023-10-25 16:05:57,000 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENV1 4.3.2
+2023-10-25 16:05:57,000 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.3.0
+2023-10-25 16:05:57,000 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2023-10-25 16:05:57,000 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G0 1.1.0
+2023-10-25 16:05:57,000 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 2.0.0
+2023-10-25 16:05:57,000 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 3.0.0
+2023-10-25 16:05:57,000 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 5.0.0
+2023-10-25 16:05:57,001 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics STM32_WPAN 1.0.0
+2023-10-25 16:05:57,001 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2023-10-25 16:05:57,001 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-FLIGHT1 5.0.2
+2023-10-25 16:05:57,001 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2023-10-25 16:05:57,001 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.3.1
+2023-10-25 16:05:57,001 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G4 2.0.0
+2023-10-25 16:05:57,001 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2023-10-25 16:05:57,001 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 3.1.0
+2023-10-25 16:05:57,001 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :Infineon AIROC-Wi-Fi-Bluetooth-STM32 1.5.1
+2023-10-25 16:05:57,001 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2023-10-25 16:05:57,001 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 3.0.0
+2023-10-25 16:05:57,002 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 7.0.0
+2023-10-25 16:05:57,002 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-SIGFOX1 3.2.0
+2023-10-25 16:05:57,002 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2023-10-25 16:05:57,002 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2023-10-25 16:05:57,005 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :emotas I-CUBE-CANOPEN 1.3.0
+2023-10-25 16:05:57,005 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 10.0.0
+2023-10-25 16:05:57,006 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-FREERTOS 1.1.0
+2023-10-25 16:05:57,006 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC7 1.0.1
+2023-10-25 16:05:57,006 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2023-10-25 16:05:57,006 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.22.1
+2023-10-25 16:05:57,006 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC6 3.0.0
+2023-10-25 16:05:57,006 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :portGmbH I-Cube-SoM-uGOAL 1.1.0
+2023-10-25 16:05:57,006 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALS 1.0.1
+2023-10-25 16:05:57,006 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 1.0.0
+2023-10-25 16:05:57,006 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-SMARTAG2 1.2.0
+2023-10-25 16:05:57,006 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WL 2.0.0
+2023-10-25 16:05:57,006 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2023-10-25 16:05:57,006 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 8.1.0
+2023-10-25 16:05:57,006 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L4 2.0.0
+2023-10-25 16:05:57,006 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2023-10-25 16:05:57,006 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :WES I-CUBE-Cesium 1.3.0
+2023-10-25 16:05:57,006 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 2.0.0
+2023-10-25 16:05:57,006 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2023-10-25 16:05:57,006 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 4.0.0
+2023-10-25 16:05:57,006 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.3.0
+2023-10-25 16:05:57,006 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2023-10-25 16:05:57,006 [INFO] ThirdParty:841 - exiting critical section [change project]
+2023-10-25 16:05:57,132 [INFO] PinOutPanel:1499 - setPackage(No Configuration,No Configuration)
+2023-10-25 16:05:57,133 [INFO] PinOutPanel:1499 - setPackage(STM32F030R8Tx,LQFP64)
+2023-10-25 16:05:57,501 [INFO] UtilMem:75 - Before build in PCC Used Memory: 294532496 Bytes (786432000)
+2023-10-25 16:05:57,668 [INFO] UtilMem:75 - After build in PCC Used Memory: 334378400 Bytes (786432000)
+2023-10-25 16:05:57,685 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-25 16:05:57,685 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-25 16:05:57,685 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-25 16:05:57,686 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-25 16:05:57,686 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-25 16:05:57,686 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-25 16:05:57,686 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-25 16:05:57,686 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-25 16:05:57,686 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-25 16:05:57,686 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-25 16:05:57,686 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-25 16:05:57,686 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-25 16:05:57,687 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-25 16:05:57,687 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-25 16:05:57,687 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-25 16:05:57,687 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-25 16:05:57,687 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-25 16:05:57,687 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-25 16:05:57,687 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-25 16:05:57,688 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-25 16:05:57,688 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-25 16:05:57,688 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-25 16:05:57,688 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-25 16:05:57,688 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-25 16:05:57,688 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-25 16:05:57,689 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-10-25 16:05:57,728 [INFO] CADModel:165 - CPN selected for project levelSTM32F030R8T6
+2023-10-25 16:05:57,728 [INFO] CADModel:114 - Register for checkConnection events
+2023-10-25 16:05:57,782 [INFO] OpenFileManager:328 - Restore cursor
+2023-10-25 16:07:29,668 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 697631752 Bytes (810549248)
+2023-10-25 16:07:29,736 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 231650808 Bytes (810549248)
+2023-10-25 16:07:30,275 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 277788152 Bytes (810549248)
+2023-10-25 16:07:30,428 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-10-25 16:07:30,428 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-10-25 16:07:30,428 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2023-10-25 16:07:30,428 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-10-25 16:07:30,429 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-10-25 16:07:30,429 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-10-25 16:07:30,430 [INFO] CodeGenerator:799 - code generatio: config db path: C:\appz\ST\STM32CubeIDE_1.10.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-10-25 16:07:30,442 [INFO] Argument:319 - Argument : hdmavalue: null
+2023-10-25 16:07:30,442 [INFO] Argument:321 - 	 sub Args: 
+2023-10-25 16:07:30,442 [INFO] Argument:319 - Argument : Instancevalue: DMA1_Channel5
+2023-10-25 16:07:30,442 [INFO] Argument:329 - Argument : Instancevalue: DMA1_Channel5
+2023-10-25 16:07:30,443 [INFO] Argument:319 - Argument : Initvalue: null
+2023-10-25 16:07:30,443 [INFO] Argument:321 - 	 sub Args: 
+2023-10-25 16:07:30,443 [INFO] Argument:319 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2023-10-25 16:07:30,443 [INFO] Argument:329 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2023-10-25 16:07:30,443 [INFO] Argument:319 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2023-10-25 16:07:30,443 [INFO] Argument:329 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2023-10-25 16:07:30,443 [INFO] Argument:319 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2023-10-25 16:07:30,443 [INFO] Argument:329 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2023-10-25 16:07:30,443 [INFO] Argument:319 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2023-10-25 16:07:30,443 [INFO] Argument:329 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2023-10-25 16:07:30,443 [INFO] Argument:319 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2023-10-25 16:07:30,443 [INFO] Argument:329 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2023-10-25 16:07:30,443 [INFO] Argument:319 - Argument : Modevalue: DMA_CIRCULAR
+2023-10-25 16:07:30,443 [INFO] Argument:329 - Argument : Modevalue: DMA_CIRCULAR
+2023-10-25 16:07:30,443 [INFO] Argument:319 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2023-10-25 16:07:30,443 [INFO] Argument:329 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2023-10-25 16:07:30,443 [INFO] Argument:319 - Argument : Lockvalue: null
+2023-10-25 16:07:30,443 [INFO] Argument:329 - Argument : Lockvalue: null
+2023-10-25 16:07:30,443 [INFO] Argument:319 - Argument : Statevalue: null
+2023-10-25 16:07:30,443 [INFO] Argument:329 - Argument : Statevalue: null
+2023-10-25 16:07:30,443 [INFO] Argument:319 - Argument : Parentvalue: null
+2023-10-25 16:07:30,443 [INFO] Argument:329 - Argument : Parentvalue: null
+2023-10-25 16:07:30,444 [INFO] Argument:319 - Argument : XferCpltCallbackvalue: null
+2023-10-25 16:07:30,444 [INFO] Argument:329 - Argument : XferCpltCallbackvalue: null
+2023-10-25 16:07:30,444 [INFO] Argument:319 - Argument : XferHalfCpltCallbackvalue: null
+2023-10-25 16:07:30,444 [INFO] Argument:329 - Argument : XferHalfCpltCallbackvalue: null
+2023-10-25 16:07:30,444 [INFO] Argument:319 - Argument : XferErrorCallbackvalue: null
+2023-10-25 16:07:30,444 [INFO] Argument:329 - Argument : XferErrorCallbackvalue: null
+2023-10-25 16:07:30,444 [INFO] Argument:319 - Argument : ErrorCodevalue: null
+2023-10-25 16:07:30,444 [INFO] Argument:329 - Argument : ErrorCodevalue: null
+2023-10-25 16:07:30,444 [INFO] Argument:319 - Argument : DMA_Remapvalue: null
+2023-10-25 16:07:30,444 [INFO] Argument:329 - Argument : DMA_Remapvalue: null
+2023-10-25 16:07:30,560 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\license.tmp_save
+2023-10-25 16:07:30,676 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\license.tmp
+2023-10-25 16:07:30,725 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\gpio.tmp_save
+2023-10-25 16:07:30,860 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\gpio.tmp
+2023-10-25 16:07:30,960 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\dma.tmp_save
+2023-10-25 16:07:31,063 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\dma.tmp
+2023-10-25 16:07:31,067 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\dma_GV.tmp_save
+2023-10-25 16:07:31,131 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\dma_GV.tmp
+2023-10-25 16:07:31,164 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Src\stm32f0xx_it.c_save
+2023-10-25 16:07:31,350 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Src\stm32f0xx_it.c
+2023-10-25 16:07:31,355 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Inc\stm32f0xx_it.h_save
+2023-10-25 16:07:31,433 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Inc\stm32f0xx_it.h
+2023-10-25 16:07:31,454 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Src\stm32f0xx_hal_msp.c_save
+2023-10-25 16:07:31,573 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Src\stm32f0xx_hal_msp.c
+2023-10-25 16:07:31,577 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\system.tmp_save
+2023-10-25 16:07:31,749 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\system.tmp
+2023-10-25 16:07:31,787 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Inc\stm32f0xx_hal_conf.h_save
+2023-10-25 16:07:31,905 [INFO] CodeEngine:335 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Inc\stm32f0xx_hal_conf.h
+2023-10-25 16:07:31,945 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Inc\main.h_save
+2023-10-25 16:07:32,080 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Inc\main.h
+2023-10-25 16:07:32,101 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Src\main.c_save
+2023-10-25 16:07:32,244 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Src\main.c
+2023-10-25 16:07:32,682 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 129mS.
+2023-10-25 16:07:32,686 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-10-25 16:07:32,912 [INFO] ConfigFileManager:1457 - The Die is : DIE440
+2023-10-25 16:07:32,915 [INFO] ApiDbMcu:507 - Load IP Config File for FATFS
+2023-10-25 16:07:32,919 [INFO] ApiDbMcu:507 - Load IP Config File for FREERTOS
+2023-10-25 16:07:34,547 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 1861mS.
+2023-10-25 16:07:34,547 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-10-25 16:07:34,550 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-10-25 16:11:03,276 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 272093536 Bytes (828375040)
+2023-10-25 16:11:03,335 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 289919328 Bytes (828375040)
+2023-10-25 16:11:03,848 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 318001632 Bytes (828375040)
+2023-10-25 16:11:04,070 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-10-25 16:11:04,070 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-10-25 16:11:04,070 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2023-10-25 16:11:04,070 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-10-25 16:11:04,070 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-10-25 16:11:04,070 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-10-25 16:11:04,071 [INFO] CodeGenerator:799 - code generatio: config db path: C:\appz\ST\STM32CubeIDE_1.10.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-10-25 16:11:04,084 [INFO] Argument:319 - Argument : hdmavalue: null
+2023-10-25 16:11:04,084 [INFO] Argument:321 - 	 sub Args: 
+2023-10-25 16:11:04,084 [INFO] Argument:319 - Argument : Instancevalue: DMA1_Channel5
+2023-10-25 16:11:04,084 [INFO] Argument:329 - Argument : Instancevalue: DMA1_Channel5
+2023-10-25 16:11:04,084 [INFO] Argument:319 - Argument : Initvalue: null
+2023-10-25 16:11:04,084 [INFO] Argument:321 - 	 sub Args: 
+2023-10-25 16:11:04,084 [INFO] Argument:319 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2023-10-25 16:11:04,085 [INFO] Argument:329 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2023-10-25 16:11:04,085 [INFO] Argument:319 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2023-10-25 16:11:04,085 [INFO] Argument:329 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2023-10-25 16:11:04,085 [INFO] Argument:319 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2023-10-25 16:11:04,085 [INFO] Argument:329 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2023-10-25 16:11:04,085 [INFO] Argument:319 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2023-10-25 16:11:04,085 [INFO] Argument:329 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2023-10-25 16:11:04,085 [INFO] Argument:319 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2023-10-25 16:11:04,085 [INFO] Argument:329 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2023-10-25 16:11:04,085 [INFO] Argument:319 - Argument : Modevalue: DMA_CIRCULAR
+2023-10-25 16:11:04,085 [INFO] Argument:329 - Argument : Modevalue: DMA_CIRCULAR
+2023-10-25 16:11:04,085 [INFO] Argument:319 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2023-10-25 16:11:04,085 [INFO] Argument:329 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2023-10-25 16:11:04,085 [INFO] Argument:319 - Argument : Lockvalue: null
+2023-10-25 16:11:04,085 [INFO] Argument:329 - Argument : Lockvalue: null
+2023-10-25 16:11:04,085 [INFO] Argument:319 - Argument : Statevalue: null
+2023-10-25 16:11:04,085 [INFO] Argument:329 - Argument : Statevalue: null
+2023-10-25 16:11:04,085 [INFO] Argument:319 - Argument : Parentvalue: null
+2023-10-25 16:11:04,085 [INFO] Argument:329 - Argument : Parentvalue: null
+2023-10-25 16:11:04,085 [INFO] Argument:319 - Argument : XferCpltCallbackvalue: null
+2023-10-25 16:11:04,085 [INFO] Argument:329 - Argument : XferCpltCallbackvalue: null
+2023-10-25 16:11:04,085 [INFO] Argument:319 - Argument : XferHalfCpltCallbackvalue: null
+2023-10-25 16:11:04,085 [INFO] Argument:329 - Argument : XferHalfCpltCallbackvalue: null
+2023-10-25 16:11:04,086 [INFO] Argument:319 - Argument : XferErrorCallbackvalue: null
+2023-10-25 16:11:04,086 [INFO] Argument:329 - Argument : XferErrorCallbackvalue: null
+2023-10-25 16:11:04,086 [INFO] Argument:319 - Argument : ErrorCodevalue: null
+2023-10-25 16:11:04,086 [INFO] Argument:329 - Argument : ErrorCodevalue: null
+2023-10-25 16:11:04,086 [INFO] Argument:319 - Argument : DMA_Remapvalue: null
+2023-10-25 16:11:04,086 [INFO] Argument:329 - Argument : DMA_Remapvalue: null
+2023-10-25 16:11:04,230 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\license.tmp_save
+2023-10-25 16:11:04,355 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\license.tmp
+2023-10-25 16:11:04,384 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\gpio.tmp_save
+2023-10-25 16:11:04,508 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\gpio.tmp
+2023-10-25 16:11:04,579 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\dma.tmp_save
+2023-10-25 16:11:04,697 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\dma.tmp
+2023-10-25 16:11:04,701 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\dma_GV.tmp_save
+2023-10-25 16:11:04,769 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\dma_GV.tmp
+2023-10-25 16:11:04,788 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Src\stm32f0xx_it.c_save
+2023-10-25 16:11:04,909 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Src\stm32f0xx_it.c
+2023-10-25 16:11:04,915 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Inc\stm32f0xx_it.h_save
+2023-10-25 16:11:05,009 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Inc\stm32f0xx_it.h
+2023-10-25 16:11:05,029 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Src\stm32f0xx_hal_msp.c_save
+2023-10-25 16:11:05,179 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Src\stm32f0xx_hal_msp.c
+2023-10-25 16:11:05,184 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\system.tmp_save
+2023-10-25 16:11:05,262 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\system.tmp
+2023-10-25 16:11:05,280 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Inc\stm32f0xx_hal_conf.h_save
+2023-10-25 16:11:05,403 [INFO] CodeEngine:335 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Inc\stm32f0xx_hal_conf.h
+2023-10-25 16:11:05,448 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Inc\main.h_save
+2023-10-25 16:11:05,558 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Inc\main.h
+2023-10-25 16:11:05,572 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Src\main.c_save
+2023-10-25 16:11:05,707 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Src\main.c
+2023-10-25 16:11:06,142 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 132mS.
+2023-10-25 16:11:06,145 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-10-25 16:11:06,565 [INFO] ConfigFileManager:1457 - The Die is : DIE440
+2023-10-25 16:11:08,014 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 1869mS.
+2023-10-25 16:11:08,015 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-10-25 16:11:08,017 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-10-25 16:11:55,421 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 763500960 Bytes (997195776)
+2023-10-25 16:11:55,489 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 775381024 Bytes (997195776)
+2023-10-25 16:11:55,978 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 811649736 Bytes (997195776)
+2023-10-25 16:11:56,195 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-10-25 16:11:56,196 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-10-25 16:11:56,196 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2023-10-25 16:11:56,196 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-10-25 16:11:56,196 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-10-25 16:11:56,196 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-10-25 16:11:56,197 [INFO] CodeGenerator:799 - code generatio: config db path: C:\appz\ST\STM32CubeIDE_1.10.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-10-25 16:11:56,209 [INFO] Argument:319 - Argument : hdmavalue: null
+2023-10-25 16:11:56,209 [INFO] Argument:321 - 	 sub Args: 
+2023-10-25 16:11:56,209 [INFO] Argument:319 - Argument : Instancevalue: DMA1_Channel5
+2023-10-25 16:11:56,209 [INFO] Argument:329 - Argument : Instancevalue: DMA1_Channel5
+2023-10-25 16:11:56,209 [INFO] Argument:319 - Argument : Initvalue: null
+2023-10-25 16:11:56,209 [INFO] Argument:321 - 	 sub Args: 
+2023-10-25 16:11:56,209 [INFO] Argument:319 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2023-10-25 16:11:56,209 [INFO] Argument:329 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2023-10-25 16:11:56,209 [INFO] Argument:319 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2023-10-25 16:11:56,209 [INFO] Argument:329 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2023-10-25 16:11:56,209 [INFO] Argument:319 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2023-10-25 16:11:56,209 [INFO] Argument:329 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2023-10-25 16:11:56,209 [INFO] Argument:319 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2023-10-25 16:11:56,209 [INFO] Argument:329 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2023-10-25 16:11:56,209 [INFO] Argument:319 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2023-10-25 16:11:56,209 [INFO] Argument:329 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2023-10-25 16:11:56,209 [INFO] Argument:319 - Argument : Modevalue: DMA_CIRCULAR
+2023-10-25 16:11:56,209 [INFO] Argument:329 - Argument : Modevalue: DMA_CIRCULAR
+2023-10-25 16:11:56,209 [INFO] Argument:319 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2023-10-25 16:11:56,209 [INFO] Argument:329 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2023-10-25 16:11:56,209 [INFO] Argument:319 - Argument : Lockvalue: null
+2023-10-25 16:11:56,210 [INFO] Argument:329 - Argument : Lockvalue: null
+2023-10-25 16:11:56,210 [INFO] Argument:319 - Argument : Statevalue: null
+2023-10-25 16:11:56,210 [INFO] Argument:329 - Argument : Statevalue: null
+2023-10-25 16:11:56,210 [INFO] Argument:319 - Argument : Parentvalue: null
+2023-10-25 16:11:56,210 [INFO] Argument:329 - Argument : Parentvalue: null
+2023-10-25 16:11:56,210 [INFO] Argument:319 - Argument : XferCpltCallbackvalue: null
+2023-10-25 16:11:56,210 [INFO] Argument:329 - Argument : XferCpltCallbackvalue: null
+2023-10-25 16:11:56,210 [INFO] Argument:319 - Argument : XferHalfCpltCallbackvalue: null
+2023-10-25 16:11:56,210 [INFO] Argument:329 - Argument : XferHalfCpltCallbackvalue: null
+2023-10-25 16:11:56,210 [INFO] Argument:319 - Argument : XferErrorCallbackvalue: null
+2023-10-25 16:11:56,210 [INFO] Argument:329 - Argument : XferErrorCallbackvalue: null
+2023-10-25 16:11:56,210 [INFO] Argument:319 - Argument : ErrorCodevalue: null
+2023-10-25 16:11:56,210 [INFO] Argument:329 - Argument : ErrorCodevalue: null
+2023-10-25 16:11:56,210 [INFO] Argument:319 - Argument : DMA_Remapvalue: null
+2023-10-25 16:11:56,210 [INFO] Argument:329 - Argument : DMA_Remapvalue: null
+2023-10-25 16:11:56,342 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\license.tmp_save
+2023-10-25 16:11:56,477 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\license.tmp
+2023-10-25 16:11:56,503 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\gpio.tmp_save
+2023-10-25 16:11:56,607 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\gpio.tmp
+2023-10-25 16:11:56,676 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\dma.tmp_save
+2023-10-25 16:11:56,772 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\dma.tmp
+2023-10-25 16:11:56,774 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\dma_GV.tmp_save
+2023-10-25 16:11:56,838 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\dma_GV.tmp
+2023-10-25 16:11:56,855 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Src\stm32f0xx_it.c_save
+2023-10-25 16:11:56,955 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Src\stm32f0xx_it.c
+2023-10-25 16:11:56,960 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Inc\stm32f0xx_it.h_save
+2023-10-25 16:11:57,036 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Inc\stm32f0xx_it.h
+2023-10-25 16:11:57,057 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Src\stm32f0xx_hal_msp.c_save
+2023-10-25 16:11:57,157 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Src\stm32f0xx_hal_msp.c
+2023-10-25 16:11:57,161 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\system.tmp_save
+2023-10-25 16:11:57,225 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\system.tmp
+2023-10-25 16:11:57,248 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Inc\stm32f0xx_hal_conf.h_save
+2023-10-25 16:11:57,361 [INFO] CodeEngine:335 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Inc\stm32f0xx_hal_conf.h
+2023-10-25 16:11:57,397 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Inc\main.h_save
+2023-10-25 16:11:57,513 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Inc\main.h
+2023-10-25 16:11:57,528 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Src\main.c_save
+2023-10-25 16:11:57,636 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Src\main.c
+2023-10-25 16:11:58,074 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 127mS.
+2023-10-25 16:11:58,077 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-10-25 16:11:58,549 [INFO] ConfigFileManager:1457 - The Die is : DIE440
+2023-10-25 16:12:00,002 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 1925mS.
+2023-10-25 16:12:00,003 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-10-25 16:12:00,005 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-10-25 16:14:51,178 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 277910128 Bytes (912261120)
+2023-10-25 16:14:51,249 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 290422200 Bytes (912261120)
+2023-10-25 16:14:51,749 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 329733312 Bytes (912261120)
+2023-10-25 16:14:51,903 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-10-25 16:14:51,903 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-10-25 16:14:51,903 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2023-10-25 16:14:51,903 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-10-25 16:14:51,904 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-10-25 16:14:51,904 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-10-25 16:14:51,905 [INFO] CodeGenerator:799 - code generatio: config db path: C:\appz\ST\STM32CubeIDE_1.10.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-10-25 16:14:51,917 [INFO] Argument:319 - Argument : hdmavalue: null
+2023-10-25 16:14:51,917 [INFO] Argument:321 - 	 sub Args: 
+2023-10-25 16:14:51,917 [INFO] Argument:319 - Argument : Instancevalue: DMA1_Channel5
+2023-10-25 16:14:51,918 [INFO] Argument:329 - Argument : Instancevalue: DMA1_Channel5
+2023-10-25 16:14:51,918 [INFO] Argument:319 - Argument : Initvalue: null
+2023-10-25 16:14:51,918 [INFO] Argument:321 - 	 sub Args: 
+2023-10-25 16:14:51,918 [INFO] Argument:319 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2023-10-25 16:14:51,918 [INFO] Argument:329 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2023-10-25 16:14:51,918 [INFO] Argument:319 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2023-10-25 16:14:51,918 [INFO] Argument:329 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2023-10-25 16:14:51,918 [INFO] Argument:319 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2023-10-25 16:14:51,918 [INFO] Argument:329 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2023-10-25 16:14:51,918 [INFO] Argument:319 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2023-10-25 16:14:51,918 [INFO] Argument:329 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2023-10-25 16:14:51,918 [INFO] Argument:319 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2023-10-25 16:14:51,918 [INFO] Argument:329 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2023-10-25 16:14:51,918 [INFO] Argument:319 - Argument : Modevalue: DMA_CIRCULAR
+2023-10-25 16:14:51,918 [INFO] Argument:329 - Argument : Modevalue: DMA_CIRCULAR
+2023-10-25 16:14:51,918 [INFO] Argument:319 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2023-10-25 16:14:51,918 [INFO] Argument:329 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2023-10-25 16:14:51,918 [INFO] Argument:319 - Argument : Lockvalue: null
+2023-10-25 16:14:51,918 [INFO] Argument:329 - Argument : Lockvalue: null
+2023-10-25 16:14:51,918 [INFO] Argument:319 - Argument : Statevalue: null
+2023-10-25 16:14:51,918 [INFO] Argument:329 - Argument : Statevalue: null
+2023-10-25 16:14:51,918 [INFO] Argument:319 - Argument : Parentvalue: null
+2023-10-25 16:14:51,918 [INFO] Argument:329 - Argument : Parentvalue: null
+2023-10-25 16:14:51,918 [INFO] Argument:319 - Argument : XferCpltCallbackvalue: null
+2023-10-25 16:14:51,918 [INFO] Argument:329 - Argument : XferCpltCallbackvalue: null
+2023-10-25 16:14:51,918 [INFO] Argument:319 - Argument : XferHalfCpltCallbackvalue: null
+2023-10-25 16:14:51,919 [INFO] Argument:329 - Argument : XferHalfCpltCallbackvalue: null
+2023-10-25 16:14:51,919 [INFO] Argument:319 - Argument : XferErrorCallbackvalue: null
+2023-10-25 16:14:51,919 [INFO] Argument:329 - Argument : XferErrorCallbackvalue: null
+2023-10-25 16:14:51,919 [INFO] Argument:319 - Argument : ErrorCodevalue: null
+2023-10-25 16:14:51,919 [INFO] Argument:329 - Argument : ErrorCodevalue: null
+2023-10-25 16:14:51,919 [INFO] Argument:319 - Argument : DMA_Remapvalue: null
+2023-10-25 16:14:51,919 [INFO] Argument:329 - Argument : DMA_Remapvalue: null
+2023-10-25 16:14:52,025 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\license.tmp_save
+2023-10-25 16:14:52,121 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\license.tmp
+2023-10-25 16:14:52,153 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\gpio.tmp_save
+2023-10-25 16:14:52,261 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\gpio.tmp
+2023-10-25 16:14:52,349 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\dma.tmp_save
+2023-10-25 16:14:52,456 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\dma.tmp
+2023-10-25 16:14:52,460 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\dma_GV.tmp_save
+2023-10-25 16:14:52,525 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\dma_GV.tmp
+2023-10-25 16:14:52,551 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Src\stm32f0xx_it.c_save
+2023-10-25 16:14:52,650 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Src\stm32f0xx_it.c
+2023-10-25 16:14:52,656 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Inc\stm32f0xx_it.h_save
+2023-10-25 16:14:52,732 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Inc\stm32f0xx_it.h
+2023-10-25 16:14:52,752 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Src\stm32f0xx_hal_msp.c_save
+2023-10-25 16:14:52,850 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Src\stm32f0xx_hal_msp.c
+2023-10-25 16:14:52,854 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\system.tmp_save
+2023-10-25 16:14:52,919 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\system.tmp
+2023-10-25 16:14:52,940 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Inc\stm32f0xx_hal_conf.h_save
+2023-10-25 16:14:53,054 [INFO] CodeEngine:335 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Inc\stm32f0xx_hal_conf.h
+2023-10-25 16:14:53,089 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Inc\main.h_save
+2023-10-25 16:14:53,210 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Inc\main.h
+2023-10-25 16:14:53,224 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Src\main.c_save
+2023-10-25 16:14:53,352 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Src\main.c
+2023-10-25 16:14:53,790 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 127mS.
+2023-10-25 16:14:53,793 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-10-25 16:14:54,271 [INFO] ConfigFileManager:1457 - The Die is : DIE440
+2023-10-25 16:14:55,736 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 1943mS.
+2023-10-25 16:14:55,737 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-10-25 16:14:55,739 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-10-25 16:15:34,575 [INFO] I2cTimingTraitement:330 - 0x2000090E
+2023-10-25 16:16:48,495 [INFO] I2cTimingTraitement:330 - 0x2000090E
+2023-10-25 16:16:48,650 [INFO] I2cTimingTraitement:330 - 0x2000090E
+2023-10-25 16:16:51,216 [INFO] I2cTimingTraitement:330 - 0x2000090E
+2023-10-25 16:16:51,369 [INFO] I2cTimingTraitement:330 - 0x2000090E
+2023-10-25 16:18:56,289 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 256394936 Bytes (905969664)
+2023-10-25 16:18:56,368 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 268411944 Bytes (905969664)
+2023-10-25 16:18:56,859 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 255805656 Bytes (905969664)
+2023-10-25 16:18:57,047 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-10-25 16:18:57,047 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-10-25 16:18:57,047 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2023-10-25 16:18:57,047 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-10-25 16:18:57,047 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-10-25 16:18:57,048 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-10-25 16:18:57,048 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2023-10-25 16:18:57,049 [INFO] CodeGenerator:799 - code generatio: config db path: C:\appz\ST\STM32CubeIDE_1.10.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-10-25 16:18:57,063 [INFO] Argument:319 - Argument : hdmavalue: null
+2023-10-25 16:18:57,063 [INFO] Argument:321 - 	 sub Args: 
+2023-10-25 16:18:57,063 [INFO] Argument:319 - Argument : Instancevalue: DMA1_Channel5
+2023-10-25 16:18:57,063 [INFO] Argument:329 - Argument : Instancevalue: DMA1_Channel5
+2023-10-25 16:18:57,063 [INFO] Argument:319 - Argument : Initvalue: null
+2023-10-25 16:18:57,063 [INFO] Argument:321 - 	 sub Args: 
+2023-10-25 16:18:57,063 [INFO] Argument:319 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2023-10-25 16:18:57,063 [INFO] Argument:329 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2023-10-25 16:18:57,063 [INFO] Argument:319 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2023-10-25 16:18:57,063 [INFO] Argument:329 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2023-10-25 16:18:57,063 [INFO] Argument:319 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2023-10-25 16:18:57,063 [INFO] Argument:329 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2023-10-25 16:18:57,063 [INFO] Argument:319 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2023-10-25 16:18:57,064 [INFO] Argument:329 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2023-10-25 16:18:57,064 [INFO] Argument:319 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2023-10-25 16:18:57,064 [INFO] Argument:329 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2023-10-25 16:18:57,064 [INFO] Argument:319 - Argument : Modevalue: DMA_CIRCULAR
+2023-10-25 16:18:57,064 [INFO] Argument:329 - Argument : Modevalue: DMA_CIRCULAR
+2023-10-25 16:18:57,064 [INFO] Argument:319 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2023-10-25 16:18:57,064 [INFO] Argument:329 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2023-10-25 16:18:57,064 [INFO] Argument:319 - Argument : Lockvalue: null
+2023-10-25 16:18:57,064 [INFO] Argument:329 - Argument : Lockvalue: null
+2023-10-25 16:18:57,064 [INFO] Argument:319 - Argument : Statevalue: null
+2023-10-25 16:18:57,064 [INFO] Argument:329 - Argument : Statevalue: null
+2023-10-25 16:18:57,064 [INFO] Argument:319 - Argument : Parentvalue: null
+2023-10-25 16:18:57,064 [INFO] Argument:329 - Argument : Parentvalue: null
+2023-10-25 16:18:57,064 [INFO] Argument:319 - Argument : XferCpltCallbackvalue: null
+2023-10-25 16:18:57,064 [INFO] Argument:329 - Argument : XferCpltCallbackvalue: null
+2023-10-25 16:18:57,064 [INFO] Argument:319 - Argument : XferHalfCpltCallbackvalue: null
+2023-10-25 16:18:57,064 [INFO] Argument:329 - Argument : XferHalfCpltCallbackvalue: null
+2023-10-25 16:18:57,064 [INFO] Argument:319 - Argument : XferErrorCallbackvalue: null
+2023-10-25 16:18:57,064 [INFO] Argument:329 - Argument : XferErrorCallbackvalue: null
+2023-10-25 16:18:57,064 [INFO] Argument:319 - Argument : ErrorCodevalue: null
+2023-10-25 16:18:57,064 [INFO] Argument:329 - Argument : ErrorCodevalue: null
+2023-10-25 16:18:57,064 [INFO] Argument:319 - Argument : DMA_Remapvalue: null
+2023-10-25 16:18:57,064 [INFO] Argument:329 - Argument : DMA_Remapvalue: null
+2023-10-25 16:18:57,195 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\license.tmp_save
+2023-10-25 16:18:57,334 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\license.tmp
+2023-10-25 16:18:57,367 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\gpio.tmp_save
+2023-10-25 16:18:57,493 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\gpio.tmp
+2023-10-25 16:18:57,615 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\dma.tmp_save
+2023-10-25 16:18:57,706 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\dma.tmp
+2023-10-25 16:18:57,710 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\dma_GV.tmp_save
+2023-10-25 16:18:57,774 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\dma_GV.tmp
+2023-10-25 16:18:57,795 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Src\stm32f0xx_it.c_save
+2023-10-25 16:18:57,889 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Src\stm32f0xx_it.c
+2023-10-25 16:18:57,894 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Inc\stm32f0xx_it.h_save
+2023-10-25 16:18:57,971 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Inc\stm32f0xx_it.h
+2023-10-25 16:18:57,991 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Src\stm32f0xx_hal_msp.c_save
+2023-10-25 16:18:58,118 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Src\stm32f0xx_hal_msp.c
+2023-10-25 16:18:58,123 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\system.tmp_save
+2023-10-25 16:18:58,188 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\MXTmpFiles\system.tmp
+2023-10-25 16:18:58,207 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Inc\stm32f0xx_hal_conf.h_save
+2023-10-25 16:18:58,321 [INFO] CodeEngine:335 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Inc\stm32f0xx_hal_conf.h
+2023-10-25 16:18:58,374 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Inc\main.h_save
+2023-10-25 16:18:58,471 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Inc\main.h
+2023-10-25 16:18:58,485 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Src\main.c_save
+2023-10-25 16:18:58,619 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV05\CV05\Core\Src\main.c
+2023-10-25 16:18:59,068 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 128mS.
+2023-10-25 16:18:59,071 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-10-25 16:18:59,519 [INFO] ConfigFileManager:1457 - The Die is : DIE440
+2023-10-25 16:19:00,880 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 1808mS.
+2023-10-25 16:19:00,880 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-10-25 16:19:00,882 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-10-25 17:42:54,080 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
