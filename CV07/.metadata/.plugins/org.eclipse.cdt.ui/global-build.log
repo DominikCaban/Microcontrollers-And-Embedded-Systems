@@ -84,3 +84,867 @@ arm-none-eabi-size   CV07.elf
   16124	     24	   5784	  21932	   55ac	CV07.elf
 Finished building: default.size.stdout
  
+16:02:15 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/freertos.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/freertos.d" -MT"Core/Src/freertos.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/freertos.o"
+arm-none-eabi-gcc "../Core/Src/lis2dw12_reg.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/lis2dw12_reg.d" -MT"Core/Src/lis2dw12_reg.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/lis2dw12_reg.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f0xx_hal_msp.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f0xx_hal_msp.d" -MT"Core/Src/stm32f0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f0xx_hal_timebase_tim.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f0xx_hal_timebase_tim.d" -MT"Core/Src/stm32f0xx_hal_timebase_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_hal_timebase_tim.o"
+../Core/Src/main.c:26:10: fatal error: lis2dw12_reg.h: No such file or directory
+   26 | #include <lis2dw12_reg.h>
+      |          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:02:48 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f0xx_it.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f0xx_it.d" -MT"Core/Src/stm32f0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
+../Core/Src/main.c:77:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   77 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:77:47: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c:73:16: warning: 'platform_write' used but never defined
+   73 | static int32_t platform_write(void *handle, uint8_t reg, uint8_t *bufp,
+      |                ^~~~~~~~~~~~~~
+../Core/Src/main.c:75:16: warning: 'platform_read' used but never defined
+   75 | static int32_t platform_read(void *handle, uint8_t reg, uint8_t *bufp,
+      |                ^~~~~~~~~~~~~
+arm-none-eabi-gcc "../Core/Src/system_stm32f0xx.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f0xx.d" -MT"Core/Src/system_stm32f0xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f0xx.o"
+arm-none-eabi-gcc -o "CV07.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV07\CV07\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV07.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/appz/ST/STM32CubeIDE_1.10.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o:C:/Temp/Caban/Microcontrollers-And-Embedded-Systems/CV07/CV07/Debug/../Core/Src/main.c:77: undefined reference to `platform_write'
+C:/appz/ST/STM32CubeIDE_1.10.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o:(.data.lis2dw12+0x4): undefined reference to `platform_read'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:68: CV07.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:02:54 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc -o "CV07.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV07\CV07\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV07.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/appz/ST/STM32CubeIDE_1.10.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o:C:/Temp/Caban/Microcontrollers-And-Embedded-Systems/CV07/CV07/Debug/../Core/Src/main.c:77: undefined reference to `platform_write'
+C:/appz/ST/STM32CubeIDE_1.10.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o:(.data.lis2dw12+0x4): undefined reference to `platform_read'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:68: CV07.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:04:54 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+arm-none-eabi-gcc -o "CV07.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV07\CV07\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV07.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV07.elf
+ 
+arm-none-eabi-size   CV07.elf 
+arm-none-eabi-objdump -h -S  CV07.elf  > "CV07.list"
+   text	   data	    bss	    dec	    hex	filename
+  25728	    132	   6196	  32056	   7d38	CV07.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV07.list
+ 
+16:05:07 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-size   CV07.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25728	    132	   6196	  32056	   7d38	CV07.elf
+Finished building: default.size.stdout
+ 
+16:08:51 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+arm-none-eabi-gcc -o "CV07.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV07\CV07\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV07.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV07.elf
+ 
+arm-none-eabi-size   CV07.elf 
+arm-none-eabi-objdump -h -S  CV07.elf  > "CV07.list"
+   text	   data	    bss	    dec	    hex	filename
+  25728	    132	   6196	  32056	   7d38	CV07.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV07.list
+ 
+16:10:14 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+arm-none-eabi-gcc -o "CV07.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV07\CV07\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV07.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV07.elf
+ 
+arm-none-eabi-size   CV07.elf 
+arm-none-eabi-objdump -h -S  CV07.elf  > "CV07.list"
+   text	   data	    bss	    dec	    hex	filename
+  25728	    132	   6196	  32056	   7d38	CV07.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV07.list
+ 
+16:11:00 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'StartDefaultTask':
+../Core/Src/main.c:396:17: warning: unused variable 'value' [-Wunused-variable]
+  396 |         int16_t value = 0;
+      |                 ^~~~~
+arm-none-eabi-gcc -o "CV07.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV07\CV07\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV07.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV07.elf
+ 
+arm-none-eabi-size   CV07.elf 
+arm-none-eabi-objdump -h -S  CV07.elf  > "CV07.list"
+   text	   data	    bss	    dec	    hex	filename
+  24816	    132	   6196	  31144	   79a8	CV07.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV07.list
+ 
+16:14:10 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'StartDefaultTask':
+../Core/Src/main.c:396:17: warning: unused variable 'value' [-Wunused-variable]
+  396 |         int16_t value = 0;
+      |                 ^~~~~
+arm-none-eabi-gcc -o "CV07.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV07\CV07\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV07.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV07.elf
+ 
+arm-none-eabi-size   CV07.elf 
+arm-none-eabi-objdump -h -S  CV07.elf  > "CV07.list"
+   text	   data	    bss	    dec	    hex	filename
+  24912	    132	   6196	  31240	   7a08	CV07.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV07.list
+ 
+16:17:03 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'StartDefaultTask':
+../Core/Src/main.c:396:17: warning: unused variable 'value' [-Wunused-variable]
+  396 |         int16_t value = 0;
+      |                 ^~~~~
+arm-none-eabi-gcc -o "CV07.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV07\CV07\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV07.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV07.elf
+ 
+arm-none-eabi-size   CV07.elf 
+arm-none-eabi-objdump -h -S  CV07.elf  > "CV07.list"
+   text	   data	    bss	    dec	    hex	filename
+  25776	    132	   6196	  32104	   7d68	CV07.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV07.list
+ 
+16:17:37 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-size   CV07.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25776	    132	   6196	  32104	   7d68	CV07.elf
+Finished building: default.size.stdout
+ 
+16:18:10 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-size   CV07.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25776	    132	   6196	  32104	   7d68	CV07.elf
+Finished building: default.size.stdout
+ 
+16:18:13 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-size   CV07.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25776	    132	   6196	  32104	   7d68	CV07.elf
+Finished building: default.size.stdout
+ 
+16:18:58 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:120:1: error: expected expression before '.' token
+  120 | .
+      | ^
+../Core/Src/main.c: In function 'StartDefaultTask':
+../Core/Src/main.c:396:17: warning: unused variable 'value' [-Wunused-variable]
+  396 |         int16_t value = 0;
+      |                 ^~~~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:19:05 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:120:1: error: expected expression before '.' token
+  120 | .
+      | ^
+../Core/Src/main.c: In function 'StartDefaultTask':
+../Core/Src/main.c:396:17: warning: unused variable 'value' [-Wunused-variable]
+  396 |         int16_t value = 0;
+      |                 ^~~~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:19:32 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'StartDefaultTask':
+../Core/Src/main.c:396:17: warning: unused variable 'value' [-Wunused-variable]
+  396 |         int16_t value = 0;
+      |                 ^~~~~
+arm-none-eabi-gcc -o "CV07.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV07\CV07\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV07.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV07.elf
+ 
+arm-none-eabi-size   CV07.elf 
+arm-none-eabi-objdump -h -S  CV07.elf  > "CV07.list"
+   text	   data	    bss	    dec	    hex	filename
+  24912	    132	   6196	  31240	   7a08	CV07.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV07.list
+ 
+16:20:13 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'StartAcceleroTask':
+../Core/Src/main.c:474:29: error: 'S' undeclared (first use in this function)
+  474 |                 osDelay(50);S
+      |                             ^
+../Core/Src/main.c:474:29: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:474:30: error: expected ';' before '}' token
+  474 |                 osDelay(50);S
+      |                              ^
+      |                              ;
+  475 |         }
+      |         ~                     
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:20:28 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+arm-none-eabi-gcc -o "CV07.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV07\CV07\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV07.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV07.elf
+ 
+arm-none-eabi-size   CV07.elf 
+arm-none-eabi-objdump -h -S  CV07.elf  > "CV07.list"
+   text	   data	    bss	    dec	    hex	filename
+  25776	    132	   6196	  32104	   7d68	CV07.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV07.list
+ 
+16:20:57 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-size   CV07.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25776	    132	   6196	  32104	   7d68	CV07.elf
+Finished building: default.size.stdout
+ 
+16:21:10 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-size   CV07.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25776	    132	   6196	  32104	   7d68	CV07.elf
+Finished building: default.size.stdout
+ 
+16:21:12 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-size   CV07.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25776	    132	   6196	  32104	   7d68	CV07.elf
+Finished building: default.size.stdout
+ 
+16:21:53 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+arm-none-eabi-gcc -o "CV07.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV07\CV07\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV07.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV07.elf
+ 
+arm-none-eabi-size   CV07.elf 
+arm-none-eabi-objdump -h -S  CV07.elf  > "CV07.list"
+   text	   data	    bss	    dec	    hex	filename
+  25776	    132	   6196	  32104	   7d68	CV07.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV07.list
+ 
+16:21:59 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-size   CV07.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25776	    132	   6196	  32104	   7d68	CV07.elf
+Finished building: default.size.stdout
+ 
+16:23:59 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+arm-none-eabi-gcc -o "CV07.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV07\CV07\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV07.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV07.elf
+ 
+arm-none-eabi-size   CV07.elf 
+arm-none-eabi-objdump -h -S  CV07.elf  > "CV07.list"
+   text	   data	    bss	    dec	    hex	filename
+  25760	    132	   6196	  32088	   7d58	CV07.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV07.list
+ 
+16:24:04 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-size   CV07.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25760	    132	   6196	  32088	   7d58	CV07.elf
+Finished building: default.size.stdout
+ 
+16:24:33 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+arm-none-eabi-gcc -o "CV07.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV07\CV07\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV07.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV07.elf
+ 
+arm-none-eabi-size   CV07.elf 
+arm-none-eabi-objdump -h -S  CV07.elf  > "CV07.list"
+   text	   data	    bss	    dec	    hex	filename
+  24912	    132	   6196	  31240	   7a08	CV07.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV07.list
+ 
+16:25:49 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+arm-none-eabi-gcc -o "CV07.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV07\CV07\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV07.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV07.elf
+ 
+arm-none-eabi-size   CV07.elf 
+arm-none-eabi-objdump -h -S  CV07.elf  > "CV07.list"
+   text	   data	    bss	    dec	    hex	filename
+  25664	    132	   6196	  31992	   7cf8	CV07.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV07.list
+ 
+16:26:38 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'StartAcceleroTask':
+../Core/Src/main.c:452:17: warning: unused variable 'raw_acceleration' [-Wunused-variable]
+  452 |         int16_t raw_acceleration[3];
+      |                 ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:451:17: warning: unused variable 'samples' [-Wunused-variable]
+  451 |         uint8_t samples;
+      |                 ^~~~~~~
+arm-none-eabi-gcc -o "CV07.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV07\CV07\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV07.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV07.elf
+ 
+arm-none-eabi-size   CV07.elf 
+arm-none-eabi-objdump -h -S  CV07.elf  > "CV07.list"
+   text	   data	    bss	    dec	    hex	filename
+  25664	    132	   6196	  31992	   7cf8	CV07.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV07.list
+ 
+16:27:12 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/croutine.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/croutine.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/croutine.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/croutine.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/event_groups.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/event_groups.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/event_groups.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/list.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/list.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/list.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/list.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/queue.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/queue.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/queue.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/queue.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/tasks.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/tasks.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/tasks.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/tasks.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/timers.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/timers.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/timers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/timers.o"
+arm-none-eabi-gcc "../Core/Src/freertos.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/freertos.d" -MT"Core/Src/freertos.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/freertos.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c:432:1: error: expected identifier or '(' before '}' token
+  432 | }
+      | ^
+../Core/Src/main.c: In function 'StartAcceleroTask':
+../Core/Src/main.c:450:17: warning: unused variable 'raw_acceleration' [-Wunused-variable]
+  450 |         int16_t raw_acceleration[3];
+      |                 ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:449:17: warning: unused variable 'samples' [-Wunused-variable]
+  449 |         uint8_t samples;
+      |                 ^~~~~~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:27:38 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'StartAcceleroTask':
+../Core/Src/main.c:450:17: warning: unused variable 'raw_acceleration' [-Wunused-variable]
+  450 |         int16_t raw_acceleration[3];
+      |                 ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:449:17: warning: unused variable 'samples' [-Wunused-variable]
+  449 |         uint8_t samples;
+      |                 ^~~~~~~
+arm-none-eabi-gcc -o "CV07.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV07\CV07\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV07.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV07.elf
+ 
+arm-none-eabi-size   CV07.elf 
+arm-none-eabi-objdump -h -S  CV07.elf  > "CV07.list"
+   text	   data	    bss	    dec	    hex	filename
+  25948	    132	   6268	  32348	   7e5c	CV07.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV07.list
+ 
+16:27:42 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-size   CV07.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25948	    132	   6268	  32348	   7e5c	CV07.elf
+Finished building: default.size.stdout
+ 
+16:28:02 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-size   CV07.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25948	    132	   6268	  32348	   7e5c	CV07.elf
+Finished building: default.size.stdout
+ 
+16:29:30 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'StartAcceleroTask':
+../Core/Src/main.c:437:17: warning: unused variable 'raw_acceleration' [-Wunused-variable]
+  437 |         int16_t raw_acceleration[3];
+      |                 ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:436:17: warning: unused variable 'samples' [-Wunused-variable]
+  436 |         uint8_t samples;
+      |                 ^~~~~~~
+arm-none-eabi-gcc -o "CV07.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV07\CV07\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV07.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV07.elf
+ 
+arm-none-eabi-size   CV07.elf 
+arm-none-eabi-objdump -h -S  CV07.elf  > "CV07.list"
+   text	   data	    bss	    dec	    hex	filename
+  25948	    132	   6268	  32348	   7e5c	CV07.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV07.list
+ 
+16:32:01 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+arm-none-eabi-gcc -o "CV07.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV07\CV07\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV07.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV07.elf
+ 
+arm-none-eabi-size   CV07.elf 
+arm-none-eabi-objdump -h -S  CV07.elf  > "CV07.list"
+   text	   data	    bss	    dec	    hex	filename
+  25948	    132	   6268	  32348	   7e5c	CV07.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV07.list
+ 
+16:32:42 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-size   CV07.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25948	    132	   6268	  32348	   7e5c	CV07.elf
+Finished building: default.size.stdout
+ 
+16:37:03 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'StartAcceleroTask':
+../Core/Src/main.c:449:55: error: expected ')' before '{' token
+  449 |                 if (HAL_GetTick() >= (set_tick + 1000) {
+      |                    ~                                  ^~
+      |                                                       )
+../Core/Src/main.c:457:9: error: expected expression before '}' token
+  457 |         }
+      |         ^
+../Core/Src/main.c:493:1: error: expected declaration or statement at end of input
+  493 | }
+      | ^
+At top level:
+../Core/Src/main.c:486:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  486 | void Error_Handler(void) {
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:470:6: warning: 'HAL_TIM_PeriodElapsedCallback' defined but not used [-Wunused-function]
+  470 | void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:37:37 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'StartAcceleroTask':
+../Core/Src/main.c:493:1: error: expected declaration or statement at end of input
+  493 | }
+      | ^
+At top level:
+../Core/Src/main.c:486:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  486 | void Error_Handler(void) {
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:470:6: warning: 'HAL_TIM_PeriodElapsedCallback' defined but not used [-Wunused-function]
+  470 | void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:37:51 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'StartAcceleroTask':
+../Core/Src/main.c:493:1: error: expected declaration or statement at end of input
+  493 | }
+      | ^
+At top level:
+../Core/Src/main.c:486:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  486 | void Error_Handler(void) {
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:470:6: warning: 'HAL_TIM_PeriodElapsedCallback' defined but not used [-Wunused-function]
+  470 | void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:39:08 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'StartAcceleroTask':
+../Core/Src/main.c:494:1: error: expected declaration or statement at end of input
+  494 | }
+      | ^
+At top level:
+../Core/Src/main.c:487:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  487 | void Error_Handler(void) {
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:471:6: warning: 'HAL_TIM_PeriodElapsedCallback' defined but not used [-Wunused-function]
+  471 | void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:40:10 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'StartAcceleroTask':
+../Core/Src/main.c:494:1: error: expected declaration or statement at end of input
+  494 | }
+      | ^
+At top level:
+../Core/Src/main.c:487:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  487 | void Error_Handler(void) {
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:471:6: warning: 'HAL_TIM_PeriodElapsedCallback' defined but not used [-Wunused-function]
+  471 | void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:43:05 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'StartAcceleroTask':
+../Core/Src/main.c:494:1: error: expected declaration or statement at end of input
+  494 | }
+      | ^
+At top level:
+../Core/Src/main.c:487:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  487 | void Error_Handler(void) {
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:471:6: warning: 'HAL_TIM_PeriodElapsedCallback' defined but not used [-Wunused-function]
+  471 | void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:44:06 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'StartAcceleroTask':
+../Core/Src/main.c:495:1: error: expected declaration or statement at end of input
+  495 | }
+      | ^
+At top level:
+../Core/Src/main.c:488:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  488 | void Error_Handler(void) {
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:472:6: warning: 'HAL_TIM_PeriodElapsedCallback' defined but not used [-Wunused-function]
+  472 | void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:45:15 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+arm-none-eabi-gcc -o "CV07.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV07\CV07\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV07.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV07.elf
+ 
+arm-none-eabi-size   CV07.elf 
+arm-none-eabi-objdump -h -S  CV07.elf  > "CV07.list"
+   text	   data	    bss	    dec	    hex	filename
+  25996	    132	   6268	  32396	   7e8c	CV07.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV07.list
+ 
+16:45:22 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-size   CV07.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25996	    132	   6268	  32396	   7e8c	CV07.elf
+Finished building: default.size.stdout
+ 
+16:46:13 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+arm-none-eabi-gcc -o "CV07.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV07\CV07\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV07.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV07.elf
+ 
+arm-none-eabi-size   CV07.elf 
+arm-none-eabi-objdump -h -S  CV07.elf  > "CV07.list"
+   text	   data	    bss	    dec	    hex	filename
+  25996	    132	   6268	  32396	   7e8c	CV07.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV07.list
+ 
+16:46:33 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-size   CV07.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25996	    132	   6268	  32396	   7e8c	CV07.elf
+Finished building: default.size.stdout
+ 
+16:46:55 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-size   CV07.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25996	    132	   6268	  32396	   7e8c	CV07.elf
+Finished building: default.size.stdout
+ 
+16:47:05 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-size   CV07.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25996	    132	   6268	  32396	   7e8c	CV07.elf
+Finished building: default.size.stdout
+ 
+16:47:32 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+arm-none-eabi-gcc -o "CV07.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV07\CV07\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV07.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV07.elf
+ 
+arm-none-eabi-size   CV07.elf 
+arm-none-eabi-objdump -h -S  CV07.elf  > "CV07.list"
+   text	   data	    bss	    dec	    hex	filename
+  25996	    132	   6268	  32396	   7e8c	CV07.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV07.list
+ 
+16:47:53 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-size   CV07.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25996	    132	   6268	  32396	   7e8c	CV07.elf
+Finished building: default.size.stdout
+ 
+16:47:55 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-size   CV07.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25996	    132	   6268	  32396	   7e8c	CV07.elf
+Finished building: default.size.stdout
+ 
+16:48:40 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+arm-none-eabi-gcc -o "CV07.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV07\CV07\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV07.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV07.elf
+ 
+arm-none-eabi-size   CV07.elf 
+arm-none-eabi-objdump -h -S  CV07.elf  > "CV07.list"
+   text	   data	    bss	    dec	    hex	filename
+  25996	    132	   6268	  32396	   7e8c	CV07.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV07.list
+ 
+16:48:44 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-size   CV07.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25996	    132	   6268	  32396	   7e8c	CV07.elf
+Finished building: default.size.stdout
+ 
+16:49:55 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+arm-none-eabi-gcc -o "CV07.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV07\CV07\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV07.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV07.elf
+ 
+arm-none-eabi-size   CV07.elf 
+arm-none-eabi-objdump -h -S  CV07.elf  > "CV07.list"
+   text	   data	    bss	    dec	    hex	filename
+  25996	    132	   6268	  32396	   7e8c	CV07.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV07.list
+ 
+17:00:16 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:76:47: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   76 | static stmdev_ctx_t lis2dw12 = { .write_reg = platform_write, .read_reg =
+      |                                               ^~~~~~~~~~~~~~
+../Core/Src/main.c:76:47: note: (near initialization for 'lis2dw12.write_reg')
+arm-none-eabi-gcc -o "CV07.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV07\CV07\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV07.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV07.elf
+ 
+arm-none-eabi-size   CV07.elf 
+arm-none-eabi-objdump -h -S  CV07.elf  > "CV07.list"
+   text	   data	    bss	    dec	    hex	filename
+  25996	    132	   6268	  32396	   7e8c	CV07.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV07.list
+ 
+17:00:20 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-size   CV07.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25996	    132	   6268	  32396	   7e8c	CV07.elf
+Finished building: default.size.stdout
+ 
+17:00:44 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-size   CV07.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25996	    132	   6268	  32396	   7e8c	CV07.elf
+Finished building: default.size.stdout
+ 
+17:01:17 **** Incremental Build of configuration Debug for project CV07 ****
+make -j4 all 
+arm-none-eabi-size   CV07.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25996	    132	   6268	  32396	   7e8c	CV07.elf
+Finished building: default.size.stdout
+ 

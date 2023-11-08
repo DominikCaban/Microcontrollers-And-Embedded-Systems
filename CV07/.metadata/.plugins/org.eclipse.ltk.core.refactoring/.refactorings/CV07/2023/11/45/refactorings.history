@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;CV07/Core/Src/lis2dw12_reg&apos; to &apos;lis2dw12_reg.c&apos;" description="Rename resource &apos;lis2dw12_reg&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/lis2dw12_reg" name="lis2dw12_reg.c" stamp="1699454918300" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;CV07/Core/Src/ lis2dw12_reg.h&apos; to &apos;lis2dw12_reg.h&apos;" description="Rename resource &apos; lis2dw12_reg.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/ lis2dw12_reg.h" name="lis2dw12_reg.h" stamp="1699455367609" updateReferences="true"/>
+</session>

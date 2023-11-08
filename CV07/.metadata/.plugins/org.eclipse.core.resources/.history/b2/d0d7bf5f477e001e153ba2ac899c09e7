@@ -1,0 +1,13 @@
+/*
+ *  lis2dw12_reg.h
+ *
+ *  Created on: Nov 8, 2023
+ *      Author: xcaban01
+ */
+
+#ifndef SRC_LIS2DW12_REG_H_
+#define SRC_LIS2DW12_REG_H_
+
+
+
+#endif /* SRC_LIS2DW12_REG_H_ */
