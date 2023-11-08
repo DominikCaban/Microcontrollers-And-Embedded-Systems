@@ -1,0 +1,33 @@
+!SESSION 2023-11-08 15:03:31.240 -----------------------------------------------
+eclipse.buildId=Version 1.13.1
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-11-08 15:04:14.972
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-11-08 15:04:14.982
+!MESSAGE Log4j2 initialized with config file C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV07\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-11-08 15:04:18.742
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2023-11-08 15:04:43.496 -----------------------------------------------
+eclipse.buildId=Version 1.13.1
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-11-08 15:04:51.665
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-11-08 15:04:51.666
+!MESSAGE Log4j2 initialized with config file C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV07\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-11-08 15:04:55.305
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-11-08 15:17:12.734
+!MESSAGE Indexed 'CV07' (35 sources, 106 headers) in 3.58 sec: 7,932 declarations; 51,892 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0033%)
