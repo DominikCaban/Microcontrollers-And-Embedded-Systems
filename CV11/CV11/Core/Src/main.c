@@ -47,6 +47,10 @@ UART_HandleTypeDef huart3;
 
 /* USER CODE BEGIN PV */
 
+//7, 9, 3, 2, 12
+static const uint8_t PozadovanyKod[] = {7, 9, 3, 2, 12};
+static uint8_t VychodziaPozicia = 0;
+static uint32_t CasPosledKlavesy = 0;
 static volatile int key;
 
 
@@ -106,25 +110,57 @@ int main(void)
 
   HAL_TIM_Base_Start_IT(&htim3);
 
+  HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin); // svieti LED bezi kod
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  while (1)
+
+ while (1)
   {
 
-	 // TEST LED BLINK - FUNGUJE JUPI
-	 HAL_GPIO_TogglePin(LD1_GPIO_Port, LD1_Pin);
-	 HAL_Delay(250);
+	// TEST LED BLINK - FUNGUJE JUPI
+	// HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin); // svieti LED bezi kod
+	// HAL_Delay(250);
 
-	 printf("Test\n");
+	// printf("Test\n");
+
+	// if (key != -1) {
+	//	 printf("Stisknuta klavesa %d \n", key);
+	//	 key = -1;
+	// }
+
 
 	 if (key != -1) {
-		 printf("Stisknuta klavesa %d \n", key);
-		 key = -1;
-	 }
+
+			HAL_Delay(250); // delay na stlacenie klavesy
+			printf("Stisknuta klavesa %d" "\n", key);
+
+			if (HAL_GetTick() - CasPosledKlavesy < 3000) { // 3 sekundovy timeout
+				if (key == PozadovanyKod[VychodziaPozicia]) {
+					// Spravne zadana klavesa (cislo)
+					VychodziaPozicia++;
+
+					if (VychodziaPozicia == sizeof(PozadovanyKod) / sizeof(PozadovanyKod[0])) {
+						// Kód bol uspesne zadany
+						HAL_GPIO_TogglePin(LD1_GPIO_Port, LD1_Pin);
+						printf("Zadal si spravny kod !!! \n");
+
+						VychodziaPozicia = 0; // Reset pozicie pre dalsie zadanie
+					}
+				} else {
+					VychodziaPozicia = 0; // Nespravne zadana klavesa (cislo), reset pozicie
+				}
+			} else {
+				// Timeout
+				VychodziaPozicia = 0;
+			}
 
 
+			CasPosledKlavesy = HAL_GetTick();
+			key = -1; // Reset key pre detekciu dalsieho zadavania
+		}
 
 
 

@@ -1151,3 +1151,148 @@
 2023-11-29 15:39:02,006 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
 2023-11-29 15:39:02,595 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=false
 2023-11-29 15:39:02,828 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2023-11-29 15:42:40,805 [INFO] Gpio:273 - dependency for GPIO [RCC, SYS, USART3]
+2023-11-29 15:43:42,135 [INFO] Gpio:273 - dependency for GPIO [RCC, SYS, USART3]
+2023-11-29 15:43:42,197 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-29 15:43:42,331 [INFO] Gpio:273 - dependency for GPIO [RCC, SYS, USART3]
+2023-11-29 15:43:42,407 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-29 15:43:42,592 [INFO] Gpio:273 - dependency for GPIO [RCC, SYS, USART3]
+2023-11-29 15:43:42,656 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-29 15:43:45,956 [INFO] Gpio:273 - dependency for GPIO [RCC, SYS, USART3]
+2023-11-29 15:43:45,999 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-29 15:43:46,105 [INFO] Gpio:273 - dependency for GPIO [RCC, SYS, USART3]
+2023-11-29 15:43:46,158 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-29 15:43:46,325 [INFO] Gpio:273 - dependency for GPIO [RCC, SYS, USART3]
+2023-11-29 15:43:46,377 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-29 15:44:42,169 [INFO] Gpio:273 - dependency for GPIO [RCC, SYS, USART3]
+2023-11-29 15:44:42,218 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-29 15:44:42,384 [INFO] Gpio:273 - dependency for GPIO [RCC, SYS, USART3]
+2023-11-29 15:44:42,439 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-29 15:45:05,363 [INFO] Gpio:273 - dependency for GPIO [RCC, SYS, USART3]
+2023-11-29 15:45:05,406 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-29 15:45:05,576 [INFO] Gpio:273 - dependency for GPIO [RCC, SYS, USART3]
+2023-11-29 15:45:05,623 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-29 15:45:17,510 [INFO] Gpio:273 - dependency for GPIO [RCC, SYS, USART3]
+2023-11-29 15:45:17,559 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-29 15:45:17,713 [INFO] Gpio:273 - dependency for GPIO [RCC, SYS, USART3]
+2023-11-29 15:45:17,779 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-29 15:45:32,229 [INFO] Gpio:273 - dependency for GPIO [RCC, SYS, USART3]
+2023-11-29 15:45:32,277 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-29 15:45:32,440 [INFO] Gpio:273 - dependency for GPIO [RCC, SYS, USART3]
+2023-11-29 15:45:32,499 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-29 15:47:04,140 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 648282480 Bytes (1073741824)
+2023-11-29 15:47:05,735 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 744751472 Bytes (1073741824)
+2023-11-29 15:47:07,554 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 857997680 Bytes (1073741824)
+2023-11-29 15:47:07,845 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-11-29 15:47:07,845 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-11-29 15:47:07,845 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-11-29 15:47:07,845 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-11-29 15:47:07,846 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-11-29 15:47:07,847 [INFO] CodeGenerator:799 - code generatio: config db path: C:\appz\ST\STM32CubeIDE_1.10.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-11-29 15:47:07,975 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\MXTmpFiles\license.tmp_save
+2023-11-29 15:47:08,100 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\MXTmpFiles\license.tmp
+2023-11-29 15:47:08,150 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\MXTmpFiles\gpio.tmp_save
+2023-11-29 15:47:08,378 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\MXTmpFiles\gpio.tmp
+2023-11-29 15:47:08,555 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\Core\Src\stm32f4xx_it.c_save
+2023-11-29 15:47:08,855 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\Core\Src\stm32f4xx_it.c
+2023-11-29 15:47:08,871 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\Core\Inc\stm32f4xx_it.h_save
+2023-11-29 15:47:08,957 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\Core\Inc\stm32f4xx_it.h
+2023-11-29 15:47:08,997 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\Core\Src\stm32f4xx_hal_msp.c_save
+2023-11-29 15:47:09,123 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\Core\Src\stm32f4xx_hal_msp.c
+2023-11-29 15:47:09,128 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\MXTmpFiles\system.tmp_save
+2023-11-29 15:47:09,209 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\MXTmpFiles\system.tmp
+2023-11-29 15:47:09,327 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\Core\Inc\stm32f4xx_hal_conf.h_save
+2023-11-29 15:47:09,450 [INFO] CodeEngine:335 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\Core\Inc\stm32f4xx_hal_conf.h
+2023-11-29 15:47:09,512 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\Core\Inc\main.h_save
+2023-11-29 15:47:09,649 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\Core\Inc\main.h
+2023-11-29 15:47:09,674 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\Core\Src\main.c_save
+2023-11-29 15:47:09,857 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\Core\Src\main.c
+2023-11-29 15:47:10,332 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 152mS.
+2023-11-29 15:47:10,335 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-11-29 15:47:10,801 [INFO] ConfigFileManager:1457 - The Die is : DIE419
+2023-11-29 15:47:12,705 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 2370mS.
+2023-11-29 15:47:12,706 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-11-29 15:47:12,708 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-11-29 15:47:27,946 [INFO] Gpio:273 - dependency for GPIO [RCC, SYS, USART3]
+2023-11-29 15:47:57,590 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,486x274,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-29 15:49:00,316 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-29 15:51:02,456 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-29 15:51:09,929 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-29 15:51:16,207 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-29 15:56:04,067 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 871888704 Bytes (1073741824)
+2023-11-29 15:56:05,953 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 936378176 Bytes (1073741824)
+2023-11-29 15:56:07,485 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 998244160 Bytes (1073741824)
+2023-11-29 15:56:07,803 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2023-11-29 15:56:07,803 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-11-29 15:56:07,803 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-11-29 15:56:07,803 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-11-29 15:56:07,803 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-11-29 15:56:07,804 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-11-29 15:56:07,805 [INFO] CodeGenerator:799 - code generatio: config db path: C:\appz\ST\STM32CubeIDE_1.10.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-11-29 15:56:08,061 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\MXTmpFiles\license.tmp_save
+2023-11-29 15:56:08,409 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\MXTmpFiles\license.tmp
+2023-11-29 15:56:08,467 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\MXTmpFiles\gpio.tmp_save
+2023-11-29 15:56:08,629 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\MXTmpFiles\gpio.tmp
+2023-11-29 15:56:08,798 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\Core\Src\stm32f4xx_it.c_save
+2023-11-29 15:56:09,045 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\Core\Src\stm32f4xx_it.c
+2023-11-29 15:56:09,051 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\Core\Inc\stm32f4xx_it.h_save
+2023-11-29 15:56:09,149 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\Core\Inc\stm32f4xx_it.h
+2023-11-29 15:56:09,171 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\Core\Src\stm32f4xx_hal_msp.c_save
+2023-11-29 15:56:09,347 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\Core\Src\stm32f4xx_hal_msp.c
+2023-11-29 15:56:09,352 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\MXTmpFiles\system.tmp_save
+2023-11-29 15:56:09,420 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\MXTmpFiles\system.tmp
+2023-11-29 15:56:09,441 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\Core\Inc\stm32f4xx_hal_conf.h_save
+2023-11-29 15:56:09,560 [INFO] CodeEngine:335 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\Core\Inc\stm32f4xx_hal_conf.h
+2023-11-29 15:56:09,591 [WARN] IPConfigManager:3431 - IP not found : TIM
+2023-11-29 15:56:09,592 [WARN] CodeGenerator:3760 - IP not found : null
+2023-11-29 15:56:09,619 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\Core\Inc\main.h_save
+2023-11-29 15:56:09,759 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\Core\Inc\main.h
+2023-11-29 15:56:09,774 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\Core\Src\main.c_save
+2023-11-29 15:56:10,034 [INFO] CodeEngine:279 - Generated code: C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\Core\Src\main.c
+2023-11-29 15:56:10,644 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 171mS.
+2023-11-29 15:56:10,653 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-11-29 15:56:10,855 [INFO] ConfigFileManager:1457 - The Die is : DIE419
+2023-11-29 15:56:12,991 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 2338mS.
+2023-11-29 15:56:12,992 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-11-29 15:56:12,994 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-11-29 16:24:43,962 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=false
+2023-11-29 16:24:44,537 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2023-11-29 16:25:02,219 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=false
+2023-11-29 16:25:48,265 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2023-11-29 16:26:42,562 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=false
+2023-11-29 16:26:43,382 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2023-11-29 16:26:43,552 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=false
+2023-11-29 16:26:43,771 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2023-11-29 16:26:45,410 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=false
+2023-11-29 16:26:45,617 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2023-11-29 16:26:46,023 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=false
+2023-11-29 16:27:04,334 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2023-11-29 16:28:11,683 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=false
+2023-11-29 16:28:12,414 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2023-11-29 16:28:12,568 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=false
+2023-11-29 16:28:12,846 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2023-11-29 16:28:28,716 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=false
+2023-11-29 16:28:37,353 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2023-11-29 16:30:25,892 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=false
+2023-11-29 16:30:26,496 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2023-11-29 16:30:49,021 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=false
+2023-11-29 16:30:49,629 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2023-11-29 16:31:14,762 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=false
+2023-11-29 16:31:15,230 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2023-11-29 16:31:15,382 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=false
+2023-11-29 16:31:16,003 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2023-11-29 16:31:17,183 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=false
+2023-11-29 16:31:18,663 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2023-11-29 16:32:01,335 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=false
+2023-11-29 16:32:03,502 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2023-11-29 16:32:06,024 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=false
+2023-11-29 16:32:17,644 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2023-11-29 16:37:31,859 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=false
+2023-11-29 16:39:03,279 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2023-11-29 16:39:03,616 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=false
+2023-11-29 16:39:24,901 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2023-11-29 16:39:58,403 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=false
+2023-11-29 16:40:53,396 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2023-11-29 16:42:56,903 [INFO] Gpio:273 - dependency for GPIO [RCC, SYS, USART3]
+2023-11-29 16:48:43,873 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=false
+2023-11-29 16:48:58,194 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
