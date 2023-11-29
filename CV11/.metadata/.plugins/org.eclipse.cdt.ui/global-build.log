@@ -166,3 +166,712 @@ arm-none-eabi-size   CV11.elf
   10776	    112	   1976	  12864	   3240	CV11.elf
 Finished building: default.size.stdout
  
+16:11:17 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:388:6: error: 'key' undeclared (first use in this function)
+  388 |  if (key == -1) {
+      |      ^~~
+../Core/Src/main.c:388:6: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:14:23 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:391:10: warning: comparison between pointer and integer
+  391 |  if (key == -1) {
+      |          ^~
+../Core/Src/main.c:392:72: error: lvalue required as left operand of assignment
+  392 |  if (HAL_GPIO_ReadPin(Col1_GPIO_Port, Col1_Pin) == GPIO_PIN_RESET) key = keyboard[row][0];
+      |                                                                        ^
+../Core/Src/main.c:393:72: error: lvalue required as left operand of assignment
+  393 |  if (HAL_GPIO_ReadPin(Col2_GPIO_Port, Col2_Pin) == GPIO_PIN_RESET) key = keyboard[row][1];
+      |                                                                        ^
+../Core/Src/main.c:394:72: error: lvalue required as left operand of assignment
+  394 |  if (HAL_GPIO_ReadPin(Col3_GPIO_Port, Col3_Pin) == GPIO_PIN_RESET) key = keyboard[row][2];
+      |                                                                        ^
+../Core/Src/main.c:395:72: error: lvalue required as left operand of assignment
+  395 |  if (HAL_GPIO_ReadPin(Col4_GPIO_Port, Col4_Pin) == GPIO_PIN_RESET) key = keyboard[row][3];
+      |                                                                        ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:14:36 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:391:10: warning: comparison between pointer and integer
+  391 |  if (key == -1) {
+      |          ^~
+../Core/Src/main.c:392:72: error: lvalue required as left operand of assignment
+  392 |  if (HAL_GPIO_ReadPin(Col1_GPIO_Port, Col1_Pin) == GPIO_PIN_RESET) key = keyboard[row][0];
+      |                                                                        ^
+../Core/Src/main.c:393:72: error: lvalue required as left operand of assignment
+  393 |  if (HAL_GPIO_ReadPin(Col2_GPIO_Port, Col2_Pin) == GPIO_PIN_RESET) key = keyboard[row][1];
+      |                                                                        ^
+../Core/Src/main.c:394:72: error: lvalue required as left operand of assignment
+  394 |  if (HAL_GPIO_ReadPin(Col3_GPIO_Port, Col3_Pin) == GPIO_PIN_RESET) key = keyboard[row][2];
+      |                                                                        ^
+../Core/Src/main.c:395:72: error: lvalue required as left operand of assignment
+  395 |  if (HAL_GPIO_ReadPin(Col4_GPIO_Port, Col4_Pin) == GPIO_PIN_RESET) key = keyboard[row][3];
+      |                                                                        ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:16:27 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CV11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV11.elf
+ 
+arm-none-eabi-size   CV11.elf 
+arm-none-eabi-objdump -h -S  CV11.elf  > "CV11.list"
+   text	   data	    bss	    dec	    hex	filename
+  11324	     24	   1712	  13060	   3304	CV11.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV11.list
+ 
+16:17:00 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:50:8: warning: type defaults to 'int' in declaration of 'key' [-Wimplicit-int]
+   50 | static key = -1;
+      |        ^~~
+arm-none-eabi-gcc -o "CV11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV11.elf
+ 
+arm-none-eabi-size   CV11.elf 
+arm-none-eabi-objdump -h -S  CV11.elf  > "CV11.list"
+   text	   data	    bss	    dec	    hex	filename
+  11324	     24	   1712	  13060	   3304	CV11.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV11.list
+ 
+16:17:10 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CV11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV11.elf
+ 
+arm-none-eabi-size   CV11.elf 
+arm-none-eabi-objdump -h -S  CV11.elf  > "CV11.list"
+   text	   data	    bss	    dec	    hex	filename
+  11324	     24	   1712	  13060	   3304	CV11.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV11.list
+ 
+16:20:24 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:204:13: error: invalid storage class for function 'MX_TIM3_Init'
+  204 | static void MX_TIM3_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:249:13: error: invalid storage class for function 'MX_USART3_UART_Init'
+  249 | static void MX_USART3_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:282:13: error: invalid storage class for function 'MX_GPIO_Init'
+  282 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:450:1: error: expected declaration or statement at end of input
+  450 | }
+      | ^
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:57:13: warning: 'MX_GPIO_Init' used but never defined
+   57 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:58:13: warning: 'MX_USART3_UART_Init' used but never defined
+   58 | static void MX_USART3_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:59:13: warning: 'MX_TIM3_Init' used but never defined
+   59 | static void MX_TIM3_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:441:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  441 | void Error_Handler(void)
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:406:6: warning: 'HAL_TIM_PeriodElapsedCallback' defined but not used [-Wunused-function]
+  406 | void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:282:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  282 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:249:13: warning: 'MX_USART3_UART_Init' defined but not used [-Wunused-function]
+  249 | static void MX_USART3_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:204:13: warning: 'MX_TIM3_Init' defined but not used [-Wunused-function]
+  204 | static void MX_TIM3_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:158:6: warning: 'SystemClock_Config' defined but not used [-Wunused-function]
+  158 | void SystemClock_Config(void)
+      |      ^~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:20:30 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CV11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV11.elf
+ 
+arm-none-eabi-size   CV11.elf 
+arm-none-eabi-objdump -h -S  CV11.elf  > "CV11.list"
+   text	   data	    bss	    dec	    hex	filename
+  11324	     24	   1712	  13060	   3304	CV11.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV11.list
+ 
+16:21:30 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:120:17: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  120 |          printf(key);
+      |                 ^~~
+      |                 |
+      |                 int
+In file included from ../Core/Src/main.c:24:
+C:\appz\ST\STM32CubeIDE_1.10.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:210:17: note: expected 'const char * restrict' but argument is of type 'int'
+  210 | int     printf (const char *__restrict, ...)
+      |                 ^
+arm-none-eabi-gcc -o "CV11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV11.elf
+ 
+arm-none-eabi-size   CV11.elf 
+arm-none-eabi-objdump -h -S  CV11.elf  > "CV11.list"
+   text	   data	    bss	    dec	    hex	filename
+  15552	    116	   2052	  17720	   4538	CV11.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV11.list
+ 
+16:23:10 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:121:25: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  121 |                  printf(key);
+      |                         ^~~
+      |                         |
+      |                         int
+In file included from ../Core/Src/main.c:24:
+C:\appz\ST\STM32CubeIDE_1.10.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:210:17: note: expected 'const char * restrict' but argument is of type 'int'
+  210 | int     printf (const char *__restrict, ...)
+      |                 ^
+../Core/Src/main.c:122:18: error: expected '}' before 'else'
+  122 |                  else {
+      |                  ^~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:133:1: error: expected identifier or '(' before '}' token
+  133 | }
+      | ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:23:33 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:121:25: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  121 |                  printf(key);
+      |                         ^~~
+      |                         |
+      |                         int
+In file included from ../Core/Src/main.c:24:
+C:\appz\ST\STM32CubeIDE_1.10.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:210:17: note: expected 'const char * restrict' but argument is of type 'int'
+  210 | int     printf (const char *__restrict, ...)
+      |                 ^
+arm-none-eabi-gcc -o "CV11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV11.elf
+ 
+arm-none-eabi-size   CV11.elf 
+arm-none-eabi-objdump -h -S  CV11.elf  > "CV11.list"
+   text	   data	    bss	    dec	    hex	filename
+  15572	    116	   2052	  17740	   454c	CV11.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV11.list
+ 
+16:23:47 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:121:28: error: stray '\' in program
+  121 |                  printf(key\n);
+      |                            ^
+../Core/Src/main.c:121:28: error: expected ')' before 'n'
+  121 |                  printf(key\n);
+      |                        ~   ^~
+      |                            )
+../Core/Src/main.c:121:25: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  121 |                  printf(key\n);
+      |                         ^~~
+      |                         |
+      |                         int
+In file included from ../Core/Src/main.c:24:
+C:\appz\ST\STM32CubeIDE_1.10.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:210:17: note: expected 'const char * restrict' but argument is of type 'int'
+  210 | int     printf (const char *__restrict, ...)
+      |                 ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:23:59 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:121:28: error: expected ')' before string constant
+  121 |                  printf(key"\n");
+      |                        ~   ^~~~
+      |                            )
+../Core/Src/main.c:121:25: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  121 |                  printf(key"\n");
+      |                         ^~~
+      |                         |
+      |                         int
+In file included from ../Core/Src/main.c:24:
+C:\appz\ST\STM32CubeIDE_1.10.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:210:17: note: expected 'const char * restrict' but argument is of type 'int'
+  210 | int     printf (const char *__restrict, ...)
+      |                 ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:24:04 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:121:25: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  121 |                  printf(key);
+      |                         ^~~
+      |                         |
+      |                         int
+In file included from ../Core/Src/main.c:24:
+C:\appz\ST\STM32CubeIDE_1.10.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:210:17: note: expected 'const char * restrict' but argument is of type 'int'
+  210 | int     printf (const char *__restrict, ...)
+      |                 ^
+arm-none-eabi-gcc -o "CV11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV11.elf
+ 
+arm-none-eabi-size   CV11.elf 
+arm-none-eabi-objdump -h -S  CV11.elf  > "CV11.list"
+   text	   data	    bss	    dec	    hex	filename
+  15572	    116	   2052	  17740	   454c	CV11.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV11.list
+ 
+16:24:08 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-size   CV11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15572	    116	   2052	  17740	   454c	CV11.elf
+Finished building: default.size.stdout
+ 
+16:24:30 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-size   CV11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15572	    116	   2052	  17740	   454c	CV11.elf
+Finished building: default.size.stdout
+ 
+16:24:46 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-size   CV11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15572	    116	   2052	  17740	   454c	CV11.elf
+Finished building: default.size.stdout
+ 
+16:25:07 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-size   CV11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15572	    116	   2052	  17740	   454c	CV11.elf
+Finished building: default.size.stdout
+ 
+16:26:25 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:122:25: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  122 |                  printf(key);
+      |                         ^~~
+      |                         |
+      |                         int
+In file included from ../Core/Src/main.c:24:
+C:\appz\ST\STM32CubeIDE_1.10.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:210:17: note: expected 'const char * restrict' but argument is of type 'int'
+  210 | int     printf (const char *__restrict, ...)
+      |                 ^
+arm-none-eabi-gcc -o "CV11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV11.elf
+ 
+arm-none-eabi-size   CV11.elf 
+arm-none-eabi-objdump -h -S  CV11.elf  > "CV11.list"
+   text	   data	    bss	    dec	    hex	filename
+  15568	    116	   2052	  17736	   4548	CV11.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV11.list
+ 
+16:26:29 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-size   CV11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15568	    116	   2052	  17736	   4548	CV11.elf
+Finished building: default.size.stdout
+ 
+16:26:50 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-size   CV11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15568	    116	   2052	  17736	   4548	CV11.elf
+Finished building: default.size.stdout
+ 
+16:27:55 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:120:17: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  120 |          printf(key);
+      |                 ^~~
+      |                 |
+      |                 int
+In file included from ../Core/Src/main.c:24:
+C:\appz\ST\STM32CubeIDE_1.10.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:210:17: note: expected 'const char * restrict' but argument is of type 'int'
+  210 | int     printf (const char *__restrict, ...)
+      |                 ^
+arm-none-eabi-gcc -o "CV11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV11.elf
+ 
+arm-none-eabi-size   CV11.elf 
+arm-none-eabi-objdump -h -S  CV11.elf  > "CV11.list"
+   text	   data	    bss	    dec	    hex	filename
+  15568	    116	   2052	  17736	   4548	CV11.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV11.list
+ 
+16:27:59 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-size   CV11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15568	    116	   2052	  17736	   4548	CV11.elf
+Finished building: default.size.stdout
+ 
+16:28:15 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-size   CV11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15568	    116	   2052	  17736	   4548	CV11.elf
+Finished building: default.size.stdout
+ 
+16:29:01 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:121:17: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  121 |          printf(key);
+      |                 ^~~
+      |                 |
+      |                 int
+In file included from ../Core/Src/main.c:24:
+C:\appz\ST\STM32CubeIDE_1.10.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:210:17: note: expected 'const char * restrict' but argument is of type 'int'
+  210 | int     printf (const char *__restrict, ...)
+      |                 ^
+arm-none-eabi-gcc -o "CV11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV11.elf
+ 
+arm-none-eabi-size   CV11.elf 
+arm-none-eabi-objdump -h -S  CV11.elf  > "CV11.list"
+   text	   data	    bss	    dec	    hex	filename
+  15588	    116	   2052	  17756	   455c	CV11.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV11.list
+ 
+16:29:05 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-size   CV11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15588	    116	   2052	  17756	   455c	CV11.elf
+Finished building: default.size.stdout
+ 
+16:29:32 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-size   CV11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15588	    116	   2052	  17756	   455c	CV11.elf
+Finished building: default.size.stdout
+ 
+16:30:11 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:122:25: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  122 |                  printf(key);
+      |                         ^~~
+      |                         |
+      |                         int
+In file included from ../Core/Src/main.c:24:
+C:\appz\ST\STM32CubeIDE_1.10.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:210:17: note: expected 'const char * restrict' but argument is of type 'int'
+  210 | int     printf (const char *__restrict, ...)
+      |                 ^
+arm-none-eabi-gcc -o "CV11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV11.elf
+ 
+arm-none-eabi-size   CV11.elf 
+arm-none-eabi-objdump -h -S  CV11.elf  > "CV11.list"
+   text	   data	    bss	    dec	    hex	filename
+  15588	    116	   2052	  17756	   455c	CV11.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV11.list
+ 
+16:30:14 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-size   CV11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15588	    116	   2052	  17756	   455c	CV11.elf
+Finished building: default.size.stdout
+ 
+16:30:31 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-size   CV11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15588	    116	   2052	  17756	   455c	CV11.elf
+Finished building: default.size.stdout
+ 
+16:31:44 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:122:25: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  122 |                  printf(key);
+      |                         ^~~
+      |                         |
+      |                         int
+In file included from ../Core/Src/main.c:24:
+C:\appz\ST\STM32CubeIDE_1.10.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:210:17: note: expected 'const char * restrict' but argument is of type 'int'
+  210 | int     printf (const char *__restrict, ...)
+      |                 ^
+arm-none-eabi-gcc -o "CV11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV11.elf
+ 
+arm-none-eabi-size   CV11.elf 
+arm-none-eabi-objdump -h -S  CV11.elf  > "CV11.list"
+   text	   data	    bss	    dec	    hex	filename
+  15588	    112	   2056	  17756	   455c	CV11.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV11.list
+ 
+16:31:49 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-size   CV11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15588	    112	   2056	  17756	   455c	CV11.elf
+Finished building: default.size.stdout
+ 
+16:33:19 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:122:25: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  122 |                  printf(key);
+      |                         ^~~
+      |                         |
+      |                         int
+In file included from ../Core/Src/main.c:24:
+C:\appz\ST\STM32CubeIDE_1.10.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:210:17: note: expected 'const char * restrict' but argument is of type 'int'
+  210 | int     printf (const char *__restrict, ...)
+      |                 ^
+arm-none-eabi-gcc -o "CV11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV11.elf
+ 
+arm-none-eabi-size   CV11.elf 
+arm-none-eabi-objdump -h -S  CV11.elf  > "CV11.list"
+   text	   data	    bss	    dec	    hex	filename
+  15568	    112	   2056	  17736	   4548	CV11.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV11.list
+ 
+16:35:19 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CV11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV11.elf
+ 
+arm-none-eabi-size   CV11.elf 
+arm-none-eabi-objdump -h -S  CV11.elf  > "CV11.list"
+   text	   data	    bss	    dec	    hex	filename
+  15600	    112	   2056	  17768	   4568	CV11.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV11.list
+ 
+16:35:27 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-size   CV11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15600	    112	   2056	  17768	   4568	CV11.elf
+Finished building: default.size.stdout
+ 
+16:35:48 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-size   CV11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15600	    112	   2056	  17768	   4568	CV11.elf
+Finished building: default.size.stdout
+ 
+16:36:14 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-size   CV11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15600	    112	   2056	  17768	   4568	CV11.elf
+Finished building: default.size.stdout
+ 
+16:36:59 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CV11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV11.elf
+ 
+arm-none-eabi-size   CV11.elf 
+arm-none-eabi-objdump -h -S  CV11.elf  > "CV11.list"
+   text	   data	    bss	    dec	    hex	filename
+  15600	    112	   2056	  17768	   4568	CV11.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV11.list
+ 
+16:37:15 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CV11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV11.elf
+ 
+arm-none-eabi-size   CV11.elf 
+arm-none-eabi-objdump -h -S  CV11.elf  > "CV11.list"
+   text	   data	    bss	    dec	    hex	filename
+  15600	    112	   2056	  17768	   4568	CV11.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV11.list
+ 
+16:37:18 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-size   CV11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15600	    112	   2056	  17768	   4568	CV11.elf
+Finished building: default.size.stdout
+ 
+16:38:46 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CV11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV11.elf
+ 
+arm-none-eabi-size   CV11.elf 
+arm-none-eabi-objdump -h -S  CV11.elf  > "CV11.list"
+   text	   data	    bss	    dec	    hex	filename
+  15696	    112	   2056	  17864	   45c8	CV11.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV11.list
+ 
+16:39:41 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CV11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV11.elf
+ 
+arm-none-eabi-size   CV11.elf 
+arm-none-eabi-objdump -h -S  CV11.elf  > "CV11.list"
+   text	   data	    bss	    dec	    hex	filename
+  15876	    112	   2056	  18044	   467c	CV11.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV11.list
+ 
+16:40:38 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-size   CV11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15876	    112	   2056	  18044	   467c	CV11.elf
+Finished building: default.size.stdout
+ 
+16:41:23 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CV11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Temp\Caban\Microcontrollers-And-Embedded-Systems\CV11\CV11\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CV11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CV11.elf
+ 
+arm-none-eabi-size   CV11.elf 
+arm-none-eabi-objdump -h -S  CV11.elf  > "CV11.list"
+   text	   data	    bss	    dec	    hex	filename
+  15940	    112	   2056	  18108	   46bc	CV11.elf
+Finished building: default.size.stdout
+ 
+Finished building: CV11.list
+ 
+16:47:07 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-size   CV11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15940	    112	   2056	  18108	   46bc	CV11.elf
+Finished building: default.size.stdout
+ 
+16:47:30 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-size   CV11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15940	    112	   2056	  18108	   46bc	CV11.elf
+Finished building: default.size.stdout
+ 
+16:47:52 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-size   CV11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15940	    112	   2056	  18108	   46bc	CV11.elf
+Finished building: default.size.stdout
+ 
+16:48:08 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-size   CV11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15940	    112	   2056	  18108	   46bc	CV11.elf
+Finished building: default.size.stdout
+ 
+16:48:18 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-size   CV11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15940	    112	   2056	  18108	   46bc	CV11.elf
+Finished building: default.size.stdout
+ 
+16:48:33 **** Incremental Build of configuration Debug for project CV11 ****
+make -j4 all 
+arm-none-eabi-size   CV11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15940	    112	   2056	  18108	   46bc	CV11.elf
+Finished building: default.size.stdout
+ 
